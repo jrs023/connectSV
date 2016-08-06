@@ -1,0 +1,56 @@
+class Api::SkuController < ApplicationController
+  
+  def index
+  
+=begin
+    response = HTTParty.post("https://app.skuvault.com/api/getTokens", :query => { :Email => "shawn.morris@givingtons.com", :Password => "Smoothjazz123", :format => "json" })
+    
+    Build a User Interface where they can enter in their SkuVault credentials (email / password) . After that, use that information in the GetTokens call to get the appropriate tokens.
+    
+    After that, they should enter in a list of Product SKUs and you can use the GetProducts call to get the information. Now, this call will return quantities, but we are going to remove those quantities in the future so I would not use GetProducts to get quantity as well.
+    
+    Finally, once you get the Products from the GetProducts call, you can use the GetItemQuantities call to get the quantity information of that item. 
+    
+    Now, instead of sending in SKUs, you will need to send in Product Codes for GetItemQuantites to return the quantity information. Codes will be returned in the GetProducts call.
+=end
+    
+
+    #Get Example SKU'S
+    #response = HTTParty.post("https://app.skuvault.com/api/inventory/getAvailableQuantities", :query =>{:UserToken => "rU+wISuzqhzmJI2y5A0I3QX6bdmBB4lXpqeQtDk1ukM=", :TenantToken => "lxe4jjI1279ozpNWB9gecweAFl12kU+gngKjmL1ZNCg=", :format => "json"})
+=begin
+978-1601424280
+978-0802848000
+978-0310331018
+978-0310332794
+978-0310333081
+=end   
+    #Call Get Products
+    
+    #SKUS
+    skus = "[978-1601424280,978-0802848000]"
+    
+    gp_response = HTTParty.post("https://app.skuvault.com/api/products/getProducts", :query =>{:ProductSKUs => skus,:UserToken => "rU+wISuzqhzmJI2y5A0I3QX6bdmBB4lXpqeQtDk1ukM=", :TenantToken => "lxe4jjI1279ozpNWB9gecweAFl12kU+gngKjmL1ZNCg=", :format => "json"})
+   
+    #render json: gp_response
+    info = []
+    
+    title = []
+    qonhand= []
+    qpending = []
+    gp_response['Products'].each do |p|
+    	title.append(p['Description'])
+    end
+    gp_response['Products'].each do |p|
+    	qonhand.append(p['QuantityOnHand'])
+    end
+    gp_response['Products'].each do |p|
+    	qpending.append(p['QuantityPending'])
+    end
+    info.append(title)
+    info.append(skus)
+    info.append(qonhand)
+    info.append(qpending)
+    
+    info
+  end
+end
