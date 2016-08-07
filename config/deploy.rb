@@ -59,7 +59,7 @@ namespace :deploy do
         exit
       end
     end
-  endys
+  end
 
   desc 'Initial Deploy'
   task :initial do
@@ -85,4 +85,3 @@ end
 # ps aux | grep puma    # Get puma pid
 # kill -s SIGUSR2 pid   # Restart puma
 # kill -s SIGTERM pid   # Stop puma
-

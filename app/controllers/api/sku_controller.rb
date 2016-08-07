@@ -1,6 +1,6 @@
 class Api::SkuController < ApplicationController
   
-  def index
+  def show
   
     #SKUS
     skus = "[978-1601424280,978-0802848000]"
