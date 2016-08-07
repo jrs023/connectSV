@@ -1,6 +1,6 @@
 class Api::SkuController < ApplicationController
   require 'json'
-  def show   
+  def index   
     #SKUS
     #skus = "[978-1601424280,978-0802848000]"
     skus = params[:skus];
@@ -20,7 +20,7 @@ class Api::SkuController < ApplicationController
     	pending.append(p['QuantityPending'])
     end
     
-    my_object = { :title => title, :skus => skus, :onhand => onhand, :pending => pending}
+    my_object = { :title => title, :skus => skus.split(","), :onhand => onhand, :pending => pending}
 	render json: my_object.to_json, :callback => params[:callback]
   end
 end

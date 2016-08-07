@@ -1,10 +1,9 @@
 class ApplicationController < ActionController::Base
-  #protect_from_forgery with: :exception
   require 'json'
   def index
     #SKUS
-    skus = "[978-1601424280,978-0802848000]"
-    #skus = params[:skus];
+    #skus = "[978-1601424280,978-0802848000]"
+    skus = params[:skus];
 
     gp_response = HTTParty.post("https://app.skuvault.com/api/products/getProducts", :query =>{:ProductSKUs => skus,:UserToken => "rU+wISuzqhzmJI2y5A0I3QX6bdmBB4lXpqeQtDk1ukM=", :TenantToken => "lxe4jjI1279ozpNWB9gecweAFl12kU+gngKjmL1ZNCg=", :format => "json"})
    
@@ -21,7 +20,7 @@ class ApplicationController < ActionController::Base
     	pending.append(p['QuantityPending'])
     end
     
-    my_object = { :title => title, :skus => skus, :onhand => onhand, :pending => pending}
-	render json: my_object.to_json, :callback => params[:callback]
+    my_object = { :title => title, :skus => skus.split(","), :onhand => onhand, :pending => pending}
+	render html: "Test Page"
   end
 end
