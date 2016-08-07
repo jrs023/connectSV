@@ -3,7 +3,8 @@ class Api::SkuController < ApplicationController
   def show
   
     #SKUS
-    skus = "[978-1601424280,978-0802848000]"
+    #skus = "[978-1601424280,978-0802848000]"
+    skus = params[:skus]
     
     gp_response = HTTParty.post("https://app.skuvault.com/api/products/getProducts", :query =>{:ProductSKUs => skus,:UserToken => "rU+wISuzqhzmJI2y5A0I3QX6bdmBB4lXpqeQtDk1ukM=", :TenantToken => "lxe4jjI1279ozpNWB9gecweAFl12kU+gngKjmL1ZNCg=", :format => "json"})
    
@@ -27,6 +28,6 @@ class Api::SkuController < ApplicationController
     info.append(qonhand)
     info.append(qpending)
     
-    info
+	format.json{render :json => info}
   end
 end

@@ -906,3 +906,351 @@ Processing by ApplicationController#index as HTML
 Completed 200 OK in 702ms (Views: 0.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-08-06 22:31:32 -0400
+Processing by ApplicationController#index as HTML
+Completed 200 OK in 653ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-06 22:31:44 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 503ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-06 22:31:58 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 509ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-06 22:32:31 -0400
+Processing by ApplicationController#index as HTML
+Completed 200 OK in 595ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-06 22:32:37 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 801ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112404295535070153055_1470537272821&_=1470537272822" for 127.0.0.1 at 2016-08-06 22:34:32 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112404295535070153055_1470537272821", "_"=>"1470537272822"}
+Completed 200 OK in 593ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112405033762039301334_1470537295705&_=1470537295706" for 127.0.0.1 at 2016-08-06 22:34:55 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112405033762039301334_1470537295705", "_"=>"1470537295706"}
+Completed 200 OK in 818ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112409757215674050373_1470537315649&_=1470537315650" for 127.0.0.1 at 2016-08-06 22:35:15 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112409757215674050373_1470537315649", "_"=>"1470537315650"}
+Completed 200 OK in 533ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery1124024206164467146485_1470537324234&_=1470537324235" for 127.0.0.1 at 2016-08-06 22:35:24 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery1124024206164467146485_1470537324234", "_"=>"1470537324235"}
+Completed 200 OK in 557ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112408603086135491584_1470537340611&_=1470537340612" for 127.0.0.1 at 2016-08-06 22:35:40 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112408603086135491584_1470537340611", "_"=>"1470537340612"}
+Completed 200 OK in 729ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-06 22:35:55 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 746ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112407611564746129081_1470537364552&_=1470537364553" for 127.0.0.1 at 2016-08-06 22:36:04 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112407611564746129081_1470537364552", "_"=>"1470537364553"}
+Completed 200 OK in 972ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery1124046133948354968357_1470537385384&_=1470537385385" for 127.0.0.1 at 2016-08-06 22:36:25 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery1124046133948354968357_1470537385384", "_"=>"1470537385385"}
+Completed 200 OK in 652ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112407802065753143431_1470537438197&_=1470537438198" for 127.0.0.1 at 2016-08-06 22:37:18 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112407802065753143431_1470537438197", "_"=>"1470537438198"}
+Completed 200 OK in 618ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112409132066147723297_1470537447248&_=1470537447249" for 127.0.0.1 at 2016-08-06 22:37:27 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112409132066147723297_1470537447248", "_"=>"1470537447249"}
+Completed 200 OK in 518ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery112408356511423883853_1470537475985&_=1470537475986" for 127.0.0.1 at 2016-08-06 22:37:56 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery112408356511423883853_1470537475985", "_"=>"1470537475986"}
+Completed 200 OK in 697ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:38:09 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 587ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:39:34 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 658ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:39:42 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 567ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:39:44 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 590ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:40:04 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 609ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:40:06 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 539ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:40:16 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 500ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:40:25 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 597ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:40:30 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 520ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:40:55 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 593ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku?callback=jQuery1124010558944287167282_1470537670474&_=1470537670475" for 127.0.0.1 at 2016-08-06 22:41:10 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"callback"=>"jQuery1124010558944287167282_1470537670474", "_"=>"1470537670475"}
+Completed 200 OK in 604ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:41:44 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 536ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:41:55 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 547ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:00 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 503ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:05 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 551ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:08 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 476ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:16 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 570ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:42:19 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 740ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-06 22:42:21 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 402ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:26 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 430ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:28 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 428ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:29 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 418ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:47 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 440ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:50 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 444ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:42:59 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 480ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-06 22:43:23 -0400
+Processing by ApplicationController#index as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `skus' for #<ApplicationController:0x0056260c6fcb50>):
+  
+app/controllers/application_controller.rb:13:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.4ms)
+Started GET "/" for 127.0.0.1 at 2016-08-06 22:43:34 -0400
+Processing by ApplicationController#index as HTML
+Completed   in 11736ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:44:07 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 512ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22\%22[978-1601424280,978-0802848000]\%22%22" for 127.0.0.1 at 2016-08-06 22:44:27 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"\\\"[978-1601424280,978-0802848000]\\\"\""}
+Completed 200 OK in 566ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:44:43 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 495ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:45:02 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 441ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:45:12 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 1255ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:45:20 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 560ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:45:42 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/application_controller.rb:11: Invalid octal digit
+    puts [978-1601424280,978-0802848000]
+                               ^):
+  
+app/controllers/application_controller.rb:11: Invalid octal digit
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.7ms)
+Started GET "/?skus=%22[978-1601424280,978-0802848000]%22" for 127.0.0.1 at 2016-08-06 22:45:55 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"\"[978-1601424280,978-0802848000]\""}
+Completed 200 OK in 537ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?skus=[978-1601424280,978-0802848000]" for 127.0.0.1 at 2016-08-06 22:46:08 -0400
+Processing by ApplicationController#index as HTML
+  Parameters: {"skus"=>"[978-1601424280,978-0802848000]"}
+Completed 200 OK in 624ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=[978-1601424280,978-0802848000]" for 127.0.0.1 at 2016-08-06 22:46:48 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"[978-1601424280,978-0802848000]"}
+Completed 200 OK in 575ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?[978-1601424280,978-0802848000]&callback=jQuery112409225527689248558_1470538063127&_=1470538063128" for 127.0.0.1 at 2016-08-06 22:47:43 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"978-1601424280,978-0802848000"=>nil, "callback"=>"jQuery112409225527689248558_1470538063127", "_"=>"1470538063128"}
+Started GET "/api/sku/?[978-1601424280,978-0802848000]&callback=jQuery112407364229861064142_1470538073431&_=1470538073432" for 127.0.0.1 at 2016-08-06 22:47:53 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"978-1601424280,978-0802848000"=>nil, "callback"=>"jQuery112407364229861064142_1470538073431", "_"=>"1470538073432"}
+Completed 200 OK in 16747ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 13660ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=[978-1601424280,978-0802848000]&callback=jQuery1124003325217917618506_1470538091584&_=1470538091585" for 127.0.0.1 at 2016-08-06 22:48:11 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"[978-1601424280,978-0802848000]", "callback"=>"jQuery1124003325217917618506_1470538091584", "_"=>"1470538091585"}
+Completed 200 OK in 597ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=[978-1601424280,978-0802848000]&callback=jQuery1124008128149717358746_1470538100329&_=1470538100330" for 127.0.0.1 at 2016-08-06 22:48:20 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"[978-1601424280,978-0802848000]", "callback"=>"jQuery1124008128149717358746_1470538100329", "_"=>"1470538100330"}
+Completed 200 OK in 600ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
