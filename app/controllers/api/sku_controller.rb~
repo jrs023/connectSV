@@ -1,6 +1,6 @@
 class Api::SkuController < ApplicationController
   require 'json'
-  def show   
+  def index   
     #SKUS
     #skus = "[978-1601424280,978-0802848000]"
     skus = params[:skus];
