@@ -13,21 +13,11 @@ class Api::SkuController < ApplicationController
     previous_p = "";
     gp_response['Products'].each do |p|
     	if(previous_p != p['Description'])
-    		title.append(p['Description'])
-    	end
-    	previous_p = p['Description']
-    end
-    gp_response['Products'].each do |p|
-    	if(previous_p != p['QuantityOnHand'] or p['QuantityOnHand'] == 0)
-    		onhand.append(p['QuantityOnHand'])
-    	end
-    	previous_p = p['QuantityOnHand']
-    end
-    gp_response['Products'].each do |p|
-    	if(previous_p != p['QuantityPending'] or p['QuantityPending'] == 0)
+    		title.append(p['Description'])  
+    		onhand.append(p['QuantityOnHand'])    		
     		pending.append(p['QuantityPending'])
     	end
-    	previous_p = p['QuantityPending']
+    	previous_p = p['Description']
     end
     
     my_object = { :title => title, :skus => skus.split(","), :onhand => onhand, :pending => pending}

@@ -7152,3 +7152,39 @@ Processing by Api::SkuController#index as JSON
 Completed 200 OK in 932ms (Views: 0.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery11240958980622361526_1470713407555&_=1470713407556" for 127.0.0.1 at 2016-08-08 23:30:07 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:15: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:19: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:15: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+app/controllers/api/sku_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.9ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.6ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406798223826827313_1470713409289&_=1470713409290" for 127.0.0.1 at 2016-08-08 23:30:09 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:15: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:19: syntax error, unexpected '}', expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:15: syntax error, unexpected '{', expecting keyword_then or ';' or '\n'
+app/controllers/api/sku_controller.rb:19: syntax error, unexpected '}', expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.6ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112408920516061786811_1470713432489&_=1470713432490" for 127.0.0.1 at 2016-08-08 23:30:32 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112408920516061786811_1470713432489", "_"=>"1470713432490"}
+Completed 200 OK in 1085ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
