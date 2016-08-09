@@ -5372,3 +5372,1783 @@ Processing by Api::SkuController#index as JSON
 Completed 200 OK in 653ms (Views: 0.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406847306733329528_1470711619161&_=1470711619162" for 127.0.0.1 at 2016-08-08 23:00:19 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112406847306733329528_1470711619161", "_"=>"1470711619162"}
+Completed 200 OK in 864ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112409230914430443521_1470711649958&_=1470711649959" for 127.0.0.1 at 2016-08-08 23:00:49 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112409230914430443521_1470711649958", "_"=>"1470711649959"}
+Completed 200 OK in 800ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406473510352524972_1470711673495&_=1470711673496" for 127.0.0.1 at 2016-08-08 23:01:13 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112406473510352524972_1470711673495", "_"=>"1470711673496"}
+Completed 500 Internal Server Error in 648ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError ('#<HTTParty::Response:0x7f8ca0227110 parsed_response={"Products"=>[{"Id"=>10356391, "Code"=>"4010356391", "Sku"=>"978-0802412706", "PartNumber"=>"", "Description"=>"The 5 Love Languages", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.59, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0.45", "WeightUnit"=>"lbs", "ReorderPoint"=>3, "Brand"=>"Northfield Publishing", "Supplier"=>"Northfield Publishing", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>20, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1, "QuantityAvailable"=>19, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:15.5008009Z", "ModifiedDateUtc"=>"2016-05-26T20:54:33.7711866Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356413, "Code"=>"4010356413", "Sku"=>"978-0842360241", "PartNumber"=>"", "Description"=>"Sheet Music", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.243333333333334, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0.7", "WeightUnit"=>"lbs", "ReorderPoint"=>1, "Brand"=>"Thomas Nelson Publishing", "Supplier"=>"Thomas Nelson Publishing", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>2, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>2, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:15.6621394Z", "ModifiedDateUtc"=>"2016-05-26T20:54:18.3939512Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>15752437, "Code"=>"4015752437", "Sku"=>"978-0986366703", "PartNumber"=>"", "Description"=>"Husband After God", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>0, "RetailPrice"=>0, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>1581, "Brand"=>"Createspace", "Supplier"=>"Createspace", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>1410, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>167, "QuantityAvailable"=>1243, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-12-28T21:42:27.4790303Z", "ModifiedDateUtc"=>"2016-07-15T14:08:32.0223821Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>12388821, "Code"=>"4012388821", "Sku"=>"978-0986366710", "PartNumber"=>"", "Description"=>"Thirty-One Prayers for my Wife", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>3.19, "RetailPrice"=>12.99, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>5053, "Brand"=>"Createspace", "Supplier"=>"Createspace", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>1309, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1232, "QuantityAvailable"=>77, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-09-17T14:23:11.2104831Z", "ModifiedDateUtc"=>"2016-07-15T14:08:17.8753905Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>17827602, "Code"=>"4017827602", "Sku"=>"978-0990351405", "PartNumber"=>"", "Description"=>"You and Me Forever", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.43, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>2, "Brand"=>"Unknown", "Supplier"=>"Unknown", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>7, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>7, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2016-03-17T14:46:34.3561491Z", "ModifiedDateUtc"=>"2016-05-26T20:55:30.8184960Z", "Pictures"=>[], "Attributes"=>[], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>17827602, "Code"=>"4017827602", "Sku"=>"990351408", "PartNumber"=>"", "Description"=>"You and Me Forever", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.43, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>2, "Brand"=>"Unknown", "Supplier"=>"Unknown", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>7, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>7, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2016-03-17T14:46:34.3561491Z", "ModifiedDateUtc"=>"2016-05-26T20:55:30.8184960Z", "Pictures"=>[], "Attributes"=>[], "VariationParentSku"=>"", "IsAlternateSKU"=>true}, {"Id"=>17827602, "Code"=>"4017827602", "Sku"=>"0990351408", "PartNumber"=>"", "Description"=>"You and Me Forever", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.43, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>2, "Brand"=>"Unknown", "Supplier"=>"Unknown", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>7, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>7, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2016-03-17T14:46:34.3561491Z", "ModifiedDateUtc"=>"2016-05-26T20:55:30.8184960Z", "Pictures"=>[], "Attributes"=>[], "VariationParentSku"=>"", "IsAlternateSKU"=>true}, {"Id"=>10356462, "Code"=>"4010356462", "Sku"=>"978-1400324347", "PartNumber"=>"", "Description"=>"Devotions for a Healthier You", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.43, "RetailPrice"=>0, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>10, "Brand"=>"", "Supplier"=>"", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>18, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1, "QuantityAvailable"=>17, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:15.9590915Z", "ModifiedDateUtc"=>"2016-06-15T19:42:28.8586477Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356469, "Code"=>"4010356469", "Sku"=>"978-1414398044", "PartNumber"=>"", "Description"=>"The Unveiled Wife", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>8.0, "RetailPrice"=>15.99, "SalePrice"=>0, "WeightValue"=>"0.5", "WeightUnit"=>"lbs", "ReorderPoint"=>300, "Brand"=>"Thomas Nelson Publishing", "Supplier"=>"Thomas Nelson Publishing", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>32, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>2, "QuantityAvailable"=>30, "QuantityIncoming"=>48, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:15.9981232Z", "ModifiedDateUtc"=>"2016-03-14T21:27:18.1040520Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>18843529, "Code"=>"4018843529", "Sku"=>"978-1433548406", "PartNumber"=>"", "Description"=>"Antique Floral Single Column Journaling Bible-ESV", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>35.79, "RetailPrice"=>59.99, "SalePrice"=>0, "WeightValue"=>"0", "WeightUnit"=>"lbs", "ReorderPoint"=>1, "Brand"=>"Crossway Books", "Supplier"=>"Crossway Books", "SupplierInfo"=>[{"SupplierName"=>"Crossway Books", "SupplierPartNumber"=>"", "Cost"=>0, "LeadTime"=>0, "IsActive"=>false, "IsPrimary"=>true}], "Classification"=>"Book", "QuantityOnHand"=>2, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1, "QuantityAvailable"=>1, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2016-04-20T13:41:12.5084294Z", "ModifiedDateUtc"=>"2016-05-26T20:52:52.2334706Z", "Pictures"=>[], "Attributes"=>[], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356485, "Code"=>"4010356485", "Sku"=>"978-1433679599", "PartNumber"=>"", "Description"=>"The Love Dare", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>8.99, "RetailPrice"=>14.99, "SalePrice"=>0, "WeightValue"=>"0.6", "WeightUnit"=>"lbs", "ReorderPoint"=>3, "Brand"=>"B&H Publishing Group", "Supplier"=>"B&H Publishers", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>5, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>5, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.0880858Z", "ModifiedDateUtc"=>"2016-05-04T18:52:01.7000216Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356496, "Code"=>"4010356496", "Sku"=>"978-1481866880", "PartNumber"=>"", "Description"=>"Wife After God", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>3.19, "RetailPrice"=>14.99, "SalePrice"=>0, "WeightValue"=>"0.33", "WeightUnit"=>"lbs", "ReorderPoint"=>1788, "Brand"=>"Createspace", "Supplier"=>"Createspace", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>1517, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>169, "QuantityAvailable"=>1348, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.1530741Z", "ModifiedDateUtc"=>"2016-07-15T14:07:25.2592092Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356497, "Code"=>"4010356497", "Sku"=>"978-1490907550", "PartNumber"=>"", "Description"=>"Thirty-One Prayers For My Husband", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>3.19, "RetailPrice"=>12.99, "SalePrice"=>0, "WeightValue"=>"0.39", "WeightUnit"=>"lbs", "ReorderPoint"=>5363, "Brand"=>"Createspace", "Supplier"=>"Createspace", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>1408, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1236, "QuantityAvailable"=>172, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.1580735Z", "ModifiedDateUtc"=>"2016-07-15T14:07:50.6893743Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356498, "Code"=>"4010356498", "Sku"=>"978-1490925387", "PartNumber"=>"", "Description"=>"Wives After God", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>3.19, "RetailPrice"=>14.99, "SalePrice"=>0, "WeightValue"=>"0.39", "WeightUnit"=>"lbs", "ReorderPoint"=>17, "Brand"=>"Createspace", "Supplier"=>"Createspace", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>121, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>1, "QuantityAvailable"=>120, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.1630728Z", "ModifiedDateUtc"=>"2016-07-15T14:08:01.5020652Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356506, "Code"=>"4010356506", "Sku"=>"978-1589975385", "PartNumber"=>"", "Description"=>"No More Headaches", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>8.95, "RetailPrice"=>14.99, "SalePrice"=>0, "WeightValue"=>"0.5", "WeightUnit"=>"lbs", "ReorderPoint"=>10, "Brand"=>"Focus on the Family Publishing", "Supplier"=>"Focus on the Family Publishing", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>9, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>9, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.2170800Z", "ModifiedDateUtc"=>"2016-06-07T12:16:58.7750160Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356518, "Code"=>"4010356518", "Sku"=>"978-1594153204", "PartNumber"=>"", "Description"=>"Love & Respect", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>10.682, "RetailPrice"=>17.99, "SalePrice"=>0, "WeightValue"=>"1.1", "WeightUnit"=>"lbs", "ReorderPoint"=>3, "Brand"=>"Christian Large Print", "Supplier"=>"Christian Large Print", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>0, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>0, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.2810778Z", "ModifiedDateUtc"=>"2016-03-14T21:27:55.7018069Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}, {"Id"=>10356519, "Code"=>"4010356519", "Sku"=>"978-1594631870", "PartNumber"=>"", "Description"=>"The Meaning of Marriage", "ShortDescription"=>"", "LongDescription"=>"", "Cost"=>9.44, "RetailPrice"=>16, "SalePrice"=>0, "WeightValue"=>"0.6", "WeightUnit"=>"lbs", "ReorderPoint"=>3, "Brand"=>"Riverhead Books", "Supplier"=>"Riverhead Books", "SupplierInfo"=>[], "Classification"=>"Book", "QuantityOnHand"=>8, "QuantityOnHold"=>0, "QuantityPicked"=>0, "QuantityPending"=>0, "QuantityAvailable"=>8, "QuantityIncoming"=>0, "QuantityInbound"=>0, "QuantityTransfer"=>0, "QuantityInStock"=>0, "QuantityTotalFBA"=>0, "CreatedDateUtc"=>"2015-07-01T21:29:16.2860772Z", "ModifiedDateUtc"=>"2016-05-26T20:54:47.6789892Z", "Pictures"=>[], "Attributes"=>[{"Name"=>"Author", "Value"=>""}], "VariationParentSku"=>"", "IsAlternateSKU"=>false}], "Errors"=>[]}, @response=#<Net::HTTPOK 200 OK readbody=true>, @headers={"cache-control"=>["private"], "content-type"=>["application/json; charset=utf-8"], "vary"=>["Accept"], "server"=>["Microsoft-IIS/8.5"], "x-ratelimit-limit"=>["5"], "x-ratelimit-remaining"=>["3"], "x-ratelimit-reset"=>["00:00:36.5426214"], "x-powered-by"=>["ServiceStack/4.046 Win32NT/.NET", "ASP.NET"], "x-aspnet-version"=>["4.0.30319"], "date"=>["Tue, 09 Aug 2016 03:01:11 GMT"], "connection"=>["close"], "content-length"=>["12959"]}>' is not an ActiveModel-compatible object. It must implement :to_partial_path.):
+  
+app/controllers/api/sku_controller.rb:9:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.3ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112408148569965907795_1470711681059&_=1470711681060" for 127.0.0.1 at 2016-08-08 23:01:21 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112408148569965907795_1470711681059", "_"=>"1470711681060"}
+Completed 200 OK in 650ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-08 23:01:35 -0400
+Processing by Api::SkuController#index as JSON
+Completed 500 Internal Server Error in 15459ms (Views: 449.6ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/api/sku_controller.rb:23:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.4ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112408875569625511185_1470711733106&_=1470711733107" for 127.0.0.1 at 2016-08-08 23:02:13 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112408875569625511185_1470711733106", "_"=>"1470711733107"}
+No template found for Api::SkuController#index, rendering head :no_content
+Completed 204 No Content in 683ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-08 23:03:19 -0400
+Processing by Api::SkuController#index as JSON
+Completed 500 Internal Server Error in 6351ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/api/sku_controller.rb:23:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.3ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112407133460688455201_1470711807477&_=1470711807478" for 127.0.0.1 at 2016-08-08 23:03:27 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112407133460688455201_1470711807477", "_"=>"1470711807478"}
+Completed 200 OK in 806ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870%22;" for 127.0.0.1 at 2016-08-08 23:04:16 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870\""}
+Completed 200 OK in 517ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870%22" for 127.0.0.1 at 2016-08-08 23:04:32 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870\""}
+Completed 200 OK in 539ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=%22978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870%22" for 127.0.0.1 at 2016-08-08 23:05:19 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"\"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870\""}
+Completed 200 OK in 1534ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-08 23:05:37 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 792ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-08 23:06:15 -0400
+Processing by Api::SkuController#index as JSON
+Completed 500 Internal Server Error in 990ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template api/sku/{
+  "Products": [
+    {
+      "Id": "10356391",
+      "Code": "4010356391",
+      "Sku": "978-0802412706",
+      "PartNumber": "",
+      "Description": "The 5 Love Languages",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.59,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.45",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "Northfield Publishing",
+      "Supplier": "Northfield Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 20,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 19,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.5008009Z",
+      "ModifiedDateUtc": "2016-05-26T20:54:33.7711866Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356413",
+      "Code": "4010356413",
+      "Sku": "978-0842360241",
+      "PartNumber": "",
+      "Description": "Sheet Music",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.243333333333334,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.7",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1,
+      "Brand": "Thomas Nelson Publishing",
+      "Supplier": "Thomas Nelson Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 2,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 2,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.6621394Z",
+      "ModifiedDateUtc": "2016-05-26T20:54:18.3939512Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "15752437",
+      "Code": "4015752437",
+      "Sku": "978-0986366703",
+      "PartNumber": "",
+      "Description": "Husband After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 0,
+      "RetailPrice": 0,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1581,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1410,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 167,
+      "QuantityAvailable": 1243,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-12-28T21:42:27.4790303Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:32.0223821Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "12388821",
+      "Code": "4012388821",
+      "Sku": "978-0986366710",
+      "PartNumber": "",
+      "Description": "Thirty-One Prayers for my Wife",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 12.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 5053,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1309,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1232,
+      "QuantityAvailable": 77,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-09-17T14:23:11.2104831Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:17.8753905Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "978-0990351405",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "990351408",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": true
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "0990351408",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": true
+    },
+    {
+      "Id": "10356462",
+      "Code": "4010356462",
+      "Sku": "978-1400324347",
+      "PartNumber": "",
+      "Description": "Devotions for a Healthier You",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 0,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 10,
+      "Brand": "",
+      "Supplier": "",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 18,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 17,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.9590915Z",
+      "ModifiedDateUtc": "2016-06-15T19:42:28.8586477Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356469",
+      "Code": "4010356469",
+      "Sku": "978-1414398044",
+      "PartNumber": "",
+      "Description": "The Unveiled Wife",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.0,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.5",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 300,
+      "Brand": "Thomas Nelson Publishing",
+      "Supplier": "Thomas Nelson Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 32,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 2,
+      "QuantityAvailable": 30,
+      "QuantityIncoming": 48,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.9981232Z",
+      "ModifiedDateUtc": "2016-03-14T21:27:18.1040520Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "18843529",
+      "Code": "4018843529",
+      "Sku": "978-1433548406",
+      "PartNumber": "",
+      "Description": "Antique Floral Single Column Journaling Bible-ESV",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 35.79,
+      "RetailPrice": 59.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1,
+      "Brand": "Crossway Books",
+      "Supplier": "Crossway Books",
+      "SupplierInfo": [
+        {
+          "SupplierName": "Crossway Books",
+          "SupplierPartNumber": "",
+          "Cost": 0,
+          "LeadTime": 0,
+          "IsActive": false,
+          "IsPrimary": true
+        }
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 2,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 1,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-04-20T13:41:12.5084294Z",
+      "ModifiedDateUtc": "2016-05-26T20:52:52.2334706Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356485",
+      "Code": "4010356485",
+      "Sku": "978-1433679599",
+      "PartNumber": "",
+      "Description": "The Love Dare",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.99,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.6",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "B&H Publishing Group",
+      "Supplier": "B&H Publishers",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 5,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 5,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.0880858Z",
+      "ModifiedDateUtc": "2016-05-04T18:52:01.7000216Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356496",
+      "Code": "4010356496",
+      "Sku": "978-1481866880",
+      "PartNumber": "",
+      "Description": "Wife After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.33",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1788,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1517,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 169,
+      "QuantityAvailable": 1348,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1530741Z",
+      "ModifiedDateUtc": "2016-07-15T14:07:25.2592092Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356497",
+      "Code": "4010356497",
+      "Sku": "978-1490907550",
+      "PartNumber": "",
+      "Description": "Thirty-One Prayers For My Husband",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 12.99,
+      "SalePrice": 0,
+      "WeightValue": "0.39",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 5363,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1408,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1236,
+      "QuantityAvailable": 172,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1580735Z",
+      "ModifiedDateUtc": "2016-07-15T14:07:50.6893743Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356498",
+      "Code": "4010356498",
+      "Sku": "978-1490925387",
+      "PartNumber": "",
+      "Description": "Wives After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.39",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 17,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 121,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 120,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1630728Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:01.5020652Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356506",
+      "Code": "4010356506",
+      "Sku": "978-1589975385",
+      "PartNumber": "",
+      "Description": "No More Headaches",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.95,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.5",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 10,
+      "Brand": "Focus on the Family Publishing",
+      "Supplier": "Focus on the Family Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 9,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 9,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.2170800Z",
+      "ModifiedDateUtc": "2016-06-07T12:16:58.7750160Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356518",
+      "Code": "4010356518",
+      "Sku": "978-1594153204",
+      "PartNumber": "",
+      "Description": "Love & Respect",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 10.682,
+      "RetailPrice": 17.99,
+      "SalePrice": 0,
+      "WeightValue": "1.1",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "Christian Large Print",
+      "Supplier": "Christian Large Print",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 0,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 0,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.2810778Z",
+      "ModifiedDateUtc": "2016-03-14T21:27:55.7018069Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    }
+  ],
+  "Errors": [
+    "SKU '978-1594631870%22' is not found"
+  ]
+}, application/{
+  "Products": [
+    {
+      "Id": "10356391",
+      "Code": "4010356391",
+      "Sku": "978-0802412706",
+      "PartNumber": "",
+      "Description": "The 5 Love Languages",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.59,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.45",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "Northfield Publishing",
+      "Supplier": "Northfield Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 20,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 19,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.5008009Z",
+      "ModifiedDateUtc": "2016-05-26T20:54:33.7711866Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356413",
+      "Code": "4010356413",
+      "Sku": "978-0842360241",
+      "PartNumber": "",
+      "Description": "Sheet Music",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.243333333333334,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.7",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1,
+      "Brand": "Thomas Nelson Publishing",
+      "Supplier": "Thomas Nelson Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 2,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 2,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.6621394Z",
+      "ModifiedDateUtc": "2016-05-26T20:54:18.3939512Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "15752437",
+      "Code": "4015752437",
+      "Sku": "978-0986366703",
+      "PartNumber": "",
+      "Description": "Husband After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 0,
+      "RetailPrice": 0,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1581,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1410,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 167,
+      "QuantityAvailable": 1243,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-12-28T21:42:27.4790303Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:32.0223821Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "12388821",
+      "Code": "4012388821",
+      "Sku": "978-0986366710",
+      "PartNumber": "",
+      "Description": "Thirty-One Prayers for my Wife",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 12.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 5053,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1309,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1232,
+      "QuantityAvailable": 77,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-09-17T14:23:11.2104831Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:17.8753905Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "978-0990351405",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "990351408",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": true
+    },
+    {
+      "Id": "17827602",
+      "Code": "4017827602",
+      "Sku": "0990351408",
+      "PartNumber": "",
+      "Description": "You and Me Forever",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 2,
+      "Brand": "Unknown",
+      "Supplier": "Unknown",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 7,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 7,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-03-17T14:46:34.3561491Z",
+      "ModifiedDateUtc": "2016-05-26T20:55:30.8184960Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": true
+    },
+    {
+      "Id": "10356462",
+      "Code": "4010356462",
+      "Sku": "978-1400324347",
+      "PartNumber": "",
+      "Description": "Devotions for a Healthier You",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 9.43,
+      "RetailPrice": 0,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 10,
+      "Brand": "",
+      "Supplier": "",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 18,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 17,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.9590915Z",
+      "ModifiedDateUtc": "2016-06-15T19:42:28.8586477Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356469",
+      "Code": "4010356469",
+      "Sku": "978-1414398044",
+      "PartNumber": "",
+      "Description": "The Unveiled Wife",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.0,
+      "RetailPrice": 15.99,
+      "SalePrice": 0,
+      "WeightValue": "0.5",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 300,
+      "Brand": "Thomas Nelson Publishing",
+      "Supplier": "Thomas Nelson Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 32,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 2,
+      "QuantityAvailable": 30,
+      "QuantityIncoming": 48,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:15.9981232Z",
+      "ModifiedDateUtc": "2016-03-14T21:27:18.1040520Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "18843529",
+      "Code": "4018843529",
+      "Sku": "978-1433548406",
+      "PartNumber": "",
+      "Description": "Antique Floral Single Column Journaling Bible-ESV",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 35.79,
+      "RetailPrice": 59.99,
+      "SalePrice": 0,
+      "WeightValue": "0",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1,
+      "Brand": "Crossway Books",
+      "Supplier": "Crossway Books",
+      "SupplierInfo": [
+        {
+          "SupplierName": "Crossway Books",
+          "SupplierPartNumber": "",
+          "Cost": 0,
+          "LeadTime": 0,
+          "IsActive": false,
+          "IsPrimary": true
+        }
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 2,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 1,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2016-04-20T13:41:12.5084294Z",
+      "ModifiedDateUtc": "2016-05-26T20:52:52.2334706Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356485",
+      "Code": "4010356485",
+      "Sku": "978-1433679599",
+      "PartNumber": "",
+      "Description": "The Love Dare",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.99,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.6",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "B&H Publishing Group",
+      "Supplier": "B&H Publishers",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 5,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 5,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.0880858Z",
+      "ModifiedDateUtc": "2016-05-04T18:52:01.7000216Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356496",
+      "Code": "4010356496",
+      "Sku": "978-1481866880",
+      "PartNumber": "",
+      "Description": "Wife After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.33",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 1788,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1517,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 169,
+      "QuantityAvailable": 1348,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1530741Z",
+      "ModifiedDateUtc": "2016-07-15T14:07:25.2592092Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356497",
+      "Code": "4010356497",
+      "Sku": "978-1490907550",
+      "PartNumber": "",
+      "Description": "Thirty-One Prayers For My Husband",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 12.99,
+      "SalePrice": 0,
+      "WeightValue": "0.39",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 5363,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 1408,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1236,
+      "QuantityAvailable": 172,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1580735Z",
+      "ModifiedDateUtc": "2016-07-15T14:07:50.6893743Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356498",
+      "Code": "4010356498",
+      "Sku": "978-1490925387",
+      "PartNumber": "",
+      "Description": "Wives After God",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 3.19,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.39",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 17,
+      "Brand": "Createspace",
+      "Supplier": "Createspace",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 121,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 1,
+      "QuantityAvailable": 120,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.1630728Z",
+      "ModifiedDateUtc": "2016-07-15T14:08:01.5020652Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356506",
+      "Code": "4010356506",
+      "Sku": "978-1589975385",
+      "PartNumber": "",
+      "Description": "No More Headaches",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 8.95,
+      "RetailPrice": 14.99,
+      "SalePrice": 0,
+      "WeightValue": "0.5",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 10,
+      "Brand": "Focus on the Family Publishing",
+      "Supplier": "Focus on the Family Publishing",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 9,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 9,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.2170800Z",
+      "ModifiedDateUtc": "2016-06-07T12:16:58.7750160Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    },
+    {
+      "Id": "10356518",
+      "Code": "4010356518",
+      "Sku": "978-1594153204",
+      "PartNumber": "",
+      "Description": "Love & Respect",
+      "ShortDescription": "",
+      "LongDescription": "",
+      "Cost": 10.682,
+      "RetailPrice": 17.99,
+      "SalePrice": 0,
+      "WeightValue": "1.1",
+      "WeightUnit": "lbs",
+      "ReorderPoint": 3,
+      "Brand": "Christian Large Print",
+      "Supplier": "Christian Large Print",
+      "SupplierInfo": [
+
+      ],
+      "Classification": "Book",
+      "QuantityOnHand": 0,
+      "QuantityOnHold": 0,
+      "QuantityPicked": 0,
+      "QuantityPending": 0,
+      "QuantityAvailable": 0,
+      "QuantityIncoming": 0,
+      "QuantityInbound": 0,
+      "QuantityTransfer": 0,
+      "QuantityInStock": 0,
+      "QuantityTotalFBA": 0,
+      "CreatedDateUtc": "2015-07-01T21:29:16.2810778Z",
+      "ModifiedDateUtc": "2016-03-14T21:27:55.7018069Z",
+      "Pictures": [
+
+      ],
+      "Attributes": [
+        {
+          "Name": "Author",
+          "Value": ""
+        }
+      ],
+      "VariationParentSku": "",
+      "IsAlternateSKU": false
+    }
+  ],
+  "Errors": [
+    "SKU '978-1594631870%22' is not found"
+  ]
+} with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/jrs023/workspace/connectSV/app/views"
+):
+  
+app/controllers/api/sku_controller.rb:9:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (19.1ms)
+Started GET "/api/sku/" for 127.0.0.1 at 2016-08-08 23:06:30 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 742ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124007552355097617802_1470712053395&_=1470712053396" for 127.0.0.1 at 2016-08-08 23:07:33 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124007552355097617802_1470712053395", "_"=>"1470712053396"}
+Completed 200 OK in 793ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406705232979031911_1470712065442&_=1470712065443" for 127.0.0.1 at 2016-08-08 23:07:45 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112406705232979031911_1470712065442", "_"=>"1470712065443"}
+Completed 200 OK in 1197ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124037518718595359346_1470712084498&_=1470712084499" for 127.0.0.1 at 2016-08-08 23:08:04 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124037518718595359346_1470712084498", "_"=>"1470712084499"}
+Completed 200 OK in 650ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112407008262571896136_1470712096285&_=1470712096286" for 127.0.0.1 at 2016-08-08 23:08:16 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112407008262571896136_1470712096285", "_"=>"1470712096286"}
+Completed 200 OK in 601ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124026301370110744227_1470712187274&_=1470712187275" for 127.0.0.1 at 2016-08-08 23:09:47 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124026301370110744227_1470712187274", "_"=>"1470712187275"}
+Completed 200 OK in 1059ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112400072982042689287985_1470712663473&_=1470712663474" for 127.0.0.1 at 2016-08-08 23:17:43 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112400072982042689287985_1470712663473", "_"=>"1470712663474"}
+Completed 200 OK in 926ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406112103411520069_1470712665827&_=1470712665828" for 127.0.0.1 at 2016-08-08 23:17:45 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112406112103411520069_1470712665827", "_"=>"1470712665828"}
+Completed 200 OK in 515ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124014601458803154477_1470712685391&_=1470712685392" for 127.0.0.1 at 2016-08-08 23:18:05 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124014601458803154477_1470712685391", "_"=>"1470712685392"}
+Completed 200 OK in 533ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124011498745090902585_1470712759593&_=1470712759594" for 127.0.0.1 at 2016-08-08 23:19:19 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112409590352077873862_1470712761126&_=1470712761127" for 127.0.0.1 at 2016-08-08 23:19:21 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.9ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112407924492094292088_1470712780709&_=1470712780710" for 127.0.0.1 at 2016-08-08 23:19:40 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406902621324636128_1470712889479&_=1470712889480" for 127.0.0.1 at 2016-08-08 23:21:29 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.5ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112409954353887461856_1470712890750&_=1470712890751" for 127.0.0.1 at 2016-08-08 23:21:30 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112405259934730896878_1470712908942&_=1470712908943" for 127.0.0.1 at 2016-08-08 23:21:48 -0400
+  
+SyntaxError (/home/jrs023/workspace/connectSV/app/controllers/api/sku_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/api/sku_controller.rb:34: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.8ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112407122970112966273_1470712938325&_=1470712938326" for 127.0.0.1 at 2016-08-08 23:22:18 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112407122970112966273_1470712938325", "_"=>"1470712938326"}
+Completed 200 OK in 681ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112406764489096250146_1470712954658&_=1470712954659" for 127.0.0.1 at 2016-08-08 23:22:34 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112406764489096250146_1470712954658", "_"=>"1470712954659"}
+Completed 200 OK in 565ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112407604902403675926_1470712960800&_=1470712960801" for 127.0.0.1 at 2016-08-08 23:22:40 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112407604902403675926_1470712960800", "_"=>"1470712960801"}
+Completed 200 OK in 632ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112405274545177129497_1470712974277&_=1470712974278" for 127.0.0.1 at 2016-08-08 23:22:54 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112405274545177129497_1470712974277", "_"=>"1470712974278"}
+Completed 200 OK in 735ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124011345227560612214_1470713022472&_=1470713022473" for 127.0.0.1 at 2016-08-08 23:23:42 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124011345227560612214_1470713022472", "_"=>"1470713022473"}
+Completed 200 OK in 875ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124013694719080477435_1470713037724&_=1470713037725" for 127.0.0.1 at 2016-08-08 23:23:57 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124013694719080477435_1470713037724", "_"=>"1470713037725"}
+Completed 200 OK in 967ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery11240961968751968261_1470713149022&_=1470713149023" for 127.0.0.1 at 2016-08-08 23:25:49 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery11240961968751968261_1470713149022", "_"=>"1470713149023"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `skus' for #<Api::SkuController:0x00561f1dd29e88>):
+  
+app/controllers/api/sku_controller.rb:8:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.2ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112405463165414730755_1470713151200&_=1470713151201" for 127.0.0.1 at 2016-08-08 23:25:51 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112405463165414730755_1470713151200", "_"=>"1470713151201"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `skus' for #<Api::SkuController:0x00561f1fa01358>):
+  
+app/controllers/api/sku_controller.rb:8:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.2ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112408285923788447267_1470713162479&_=1470713162480" for 127.0.0.1 at 2016-08-08 23:26:02 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112408285923788447267_1470713162479", "_"=>"1470713162480"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `skus' for #<Api::SkuController:0x00561f1f5a1bc8>):
+  
+app/controllers/api/sku_controller.rb:8:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112409318260739888575_1470713163580&_=1470713163581" for 127.0.0.1 at 2016-08-08 23:26:03 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112409318260739888575_1470713163580", "_"=>"1470713163581"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `skus' for #<Api::SkuController:0x00561f1f6d32a8>):
+  
+app/controllers/api/sku_controller.rb:8:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.8ms)
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124007245079604211346_1470713184367&_=1470713184368" for 127.0.0.1 at 2016-08-08 23:26:24 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124007245079604211346_1470713184367", "_"=>"1470713184368"}
+Completed 200 OK in 932ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
