@@ -7200,3 +7200,47 @@ Processing by Api::SkuController#index as JSON
 Completed 200 OK in 1674ms (Views: 0.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-09 20:43:52 -0400
+Processing by Api::SkuController#index as JSON
+Completed 500 Internal Server Error in 19162ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/api/sku_controller.rb:23:in `index'
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jrs023/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.8ms)
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-09 20:44:25 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 810ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-09 20:44:38 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 681ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku" for 127.0.0.1 at 2016-08-09 20:44:43 -0400
+Processing by Api::SkuController#index as JSON
+Completed 200 OK in 899ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery1124037383106615721295_1470789975824&_=1470789975825" for 127.0.0.1 at 2016-08-09 20:46:15 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery1124037383106615721295_1470789975824", "_"=>"1470789975825"}
+Completed 200 OK in 967ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/sku/?skus=978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870&callback=jQuery112409416204178052299_1470790000471&_=1470790000472" for 127.0.0.1 at 2016-08-09 20:46:40 -0400
+Processing by Api::SkuController#index as JSON
+  Parameters: {"skus"=>"978-0802412706,978-0842360241,978-0986366703,978-0986366710,978-0990351405,978-1400324347,978-1414398044,978-1433548406,978-1433679599,978-1481866880,978-1490907550,978-1490925387,978-1589975385,978-1594153204,978-1594631870", "callback"=>"jQuery112409416204178052299_1470790000471", "_"=>"1470790000472"}
+Completed 200 OK in 845ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
