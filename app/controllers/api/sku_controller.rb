@@ -11,6 +11,8 @@ class Api::SkuController < ApplicationController
     onhand= []
     pending = []
     available = []
+    incoming = []
+    reorder = []
     previous_p = "";
     gp_response['Products'].each do |p|
     	if(previous_p != p['Description'])
@@ -18,11 +20,13 @@ class Api::SkuController < ApplicationController
     		onhand.append(p['QuantityOnHand'])    		
     		pending.append(p['QuantityPending'])		
     		available.append(p['QuantityAvailable'])
+    		incoming.append(p['QuantityIncoming'])
+    		reorder.append(p['ReorderPoint'])
     	end
     	previous_p = p['Description']
     end
     
-    my_object = { :title => title, :skus => skus.split(","), :onhand => onhand, :pending => pending, :available => available}
+    my_object = { :title => title, :skus => skus.split(","), :onhand => onhand, :pending => pending, :available => available, :incoming => incoming, :reorder => reorder}
 	render json: my_object.to_json, :callback => params[:callback]
   end
 end
