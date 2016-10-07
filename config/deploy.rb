@@ -1,8 +1,5 @@
-# config valid only for current version of Capistrano
-require "bundler/capistrano"
-require "rvm/capistran0"
-before "deploy:assets:precompile", "bundle:install"
-lock '3.6.0'
+# config valid only for current version of Capistranoz
+lock '3.6.1'
 
 # Change these
 server 'ec2-52-42-210-119.us-west-2.compute.amazonaws.com', roles: [:web, :app, :db], primary: true
