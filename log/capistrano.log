@@ -8692,3 +8692,767 @@
   INFO [3aa7ca9d] Running /usr/bin/env echo "Branch master (at 42d8aaa57cc4c1875145e950f4e66c12c439593f) deployed as release 20160909012843 by jrs023" >> /home/deploy/connectSV/revisions.log on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
  DEBUG [3aa7ca9d] Command: cd /home/deploy/connectSV/releases && /usr/bin/env echo "Branch master (at 42d8aaa57cc4c1875145e950f4e66c12c439593f) deployed as release 20160909012843 by jrs023" >> /home/deploy/connectSV/revisions.log
   INFO [3aa7ca9d] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 11:29:44 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [fec8d7ee] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [fec8d7ee] Command: [ -d ~/.rvm ]
+ DEBUG [fec8d7ee] Finished in 5.467 seconds with exit status 0 (successful).
+ DEBUG [c49ad3b1] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c49ad3b1] Command: ~/.rvm/bin/rvm version
+ DEBUG [c49ad3b1] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [c49ad3b1] 	
+ DEBUG [c49ad3b1] Finished in 2.377 seconds with exit status 0 (successful).
+ DEBUG [43503cf6] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [43503cf6] Command: ~/.rvm/bin/rvm current
+ DEBUG [43503cf6] 	ruby-2.3.0
+ DEBUG [43503cf6] 	
+ DEBUG [43503cf6] Finished in 0.289 seconds with exit status 0 (successful).
+ DEBUG [80b876a3] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [80b876a3] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [80b876a3] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [80b876a3] 	
+ DEBUG [80b876a3] Finished in 0.650 seconds with exit status 0 (successful).
+  INFO [af75de50] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [af75de50] Command: /usr/bin/env mkdir -p /tmp
+  INFO [af75de50] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [d1304d11] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d1304d11] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [d1304d11] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [a8e0daa2] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a8e0daa2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [a8e0daa2] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [a8e0daa2] 		
+ DEBUG [a8e0daa2] 	refs/heads/master
+ DEBUG [a8e0daa2] 	
+  INFO [a8e0daa2] Finished in 1.061 seconds with exit status 0 (successful).
+  INFO [52ff2180] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [52ff2180] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [52ff2180] Finished in 0.174 seconds with exit status 0 (successful).
+  INFO [89d26a5f] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [89d26a5f] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [89d26a5f] Finished in 0.167 seconds with exit status 0 (successful).
+ DEBUG [364cda75] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [364cda75] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [364cda75] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [df33594e] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [df33594e] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [df33594e] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [d9b9d613] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d9b9d613] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [d9b9d613] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [d9b9d613] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [e728a9fe] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e728a9fe] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [e728a9fe] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [795d7599] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [795d7599] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [795d7599] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [9c044840] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [9c044840] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9c044840] 	Fetching origin
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	remote: Counting objects: 15, done.[K
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	remote: Compressing objects:   7% (1/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  15% (2/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  23% (3/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  30% (4/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  38% (5/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  46% (6/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  53% (7/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  61% (8/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  69% (9/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  76% (10/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  84% (11/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects:  92% (12/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects: 100% (13/13)   [K
+ DEBUG [9c044840] 	remote: Compressing objects: 100% (13/13), done.[K
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	Unpacking objects:   6% (1/15)   
+ DEBUG [9c044840] 	Unpacking objects:  13% (2/15)   
+ DEBUG [9c044840] 	Unpacking objects:  20% (3/15)   
+ DEBUG [9c044840] 	Unpacking objects:  26% (4/15)   
+ DEBUG [9c044840] 	Unpacking objects:  33% (5/15)   
+ DEBUG [9c044840] 	Unpacking objects:  40% (6/15)   
+ DEBUG [9c044840] 	Unpacking objects:  46% (7/15)   
+ DEBUG [9c044840] 	Unpacking objects:  53% (8/15)   
+ DEBUG [9c044840] 	Unpacking objects:  60% (9/15)   
+ DEBUG [9c044840] 	Unpacking objects:  66% (10/15)   
+ DEBUG [9c044840] 	remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0[K
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	Unpacking objects:  73% (11/15)   
+ DEBUG [9c044840] 	Unpacking objects:  80% (12/15)   
+ DEBUG [9c044840] 	Unpacking objects:  86% (13/15)   
+ DEBUG [9c044840] 	Unpacking objects:  93% (14/15)   
+ DEBUG [9c044840] 	Unpacking objects: 100% (15/15)   
+ DEBUG [9c044840] 	Unpacking objects: 100% (15/15), done.
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	From https://github.com/jrs023/connectSV
+ DEBUG [9c044840] 	
+ DEBUG [9c044840] 	   42d8aaa..4eeb0b1  master     -> master
+ DEBUG [9c044840] 	
+  INFO [9c044840] Finished in 1.521 seconds with exit status 0 (successful).
+ DEBUG [5f4abdc2] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5f4abdc2] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [5f4abdc2] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [d75643d3] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007162955 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d75643d3] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007162955 )
+  INFO [d75643d3] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [bfdf49cb] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007162955 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [bfdf49cb] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007162955 )
+  INFO [bfdf49cb] Finished in 0.177 seconds with exit status 0 (successful).
+ DEBUG [a9a29c18] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a9a29c18] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [a9a29c18] Finished in 0.172 seconds with exit status 0 (successful).
+ DEBUG [5dd74a39] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5dd74a39] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5dd74a39] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [5dd74a39] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [905f3365] Running if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [905f3365] Command: if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi
+ DEBUG [905f3365] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [662bc25f] Running /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [662bc25f] Command: cd /home/deploy/connectSV/releases/20161007162955 && /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION
+  INFO [662bc25f] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [08abdce9] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007162955/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [08abdce9] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007162955/public
+  INFO [08abdce9] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [2c1ae604] Running [ -L /home/deploy/connectSV/releases/20161007162955/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2c1ae604] Command: [ -L /home/deploy/connectSV/releases/20161007162955/public/assets ]
+ DEBUG [2c1ae604] Finished in 0.161 seconds with exit status 1 (failed).
+ DEBUG [665c1f34] Running [ -d /home/deploy/connectSV/releases/20161007162955/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [665c1f34] Command: [ -d /home/deploy/connectSV/releases/20161007162955/public/assets ]
+ DEBUG [665c1f34] Finished in 0.151 seconds with exit status 1 (failed).
+  INFO [19ffa54f] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007162955/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [19ffa54f] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007162955/public/assets
+  INFO [19ffa54f] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [56a8ab32] Running if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [56a8ab32] Command: if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi
+ DEBUG [56a8ab32] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [34ae25b8] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [34ae25b8] Command: cd /home/deploy/connectSV/releases/20161007162955 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [34ae25b8] Finished in 1.713 seconds with exit status 0 (successful).
+ DEBUG [a5ebdb9a] Running if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a5ebdb9a] Command: if test ! -d /home/deploy/connectSV/releases/20161007162955; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007162955'" 1>&2; false; fi
+ DEBUG [a5ebdb9a] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [2fc13083] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2fc13083] Command: cd /home/deploy/connectSV/releases/20161007162955 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [2fc13083] 	rake aborted!
+ExecJS::RuntimeError: FATAL ERROR: Committing semi space failed. Allocation failed - process out of memory
+(execjs):1
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:219:in `exec_runtime'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:46:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:179:in `run_uglifyjs'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:141:in `compile'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:52:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:28:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:75:in `call_processor'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `reverse_each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:134:in `load_from_unloaded'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:60:in `block in load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:44:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:20:in `block in initialize'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:47:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:66:in `find_asset'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:73:in `find_all_linked_assets'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:142:in `block in find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:114:in `block (2 levels) in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:228:in `block in stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:212:in `block in stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:227:in `stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `block in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:140:in `find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:185:in `compile'
+/home/deploy/connectSV/shared/
+ DEBUG [2fc13083] 	bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:68:in `block (3 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/rake/sprocketstask.rb:147:in `with_logger'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:67:in `block (2 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => assets:precompile
+(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 11:31:30 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [887a0ecf] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [887a0ecf] Command: [ -d ~/.rvm ]
+ DEBUG [887a0ecf] Finished in 1.286 seconds with exit status 0 (successful).
+ DEBUG [23725fbc] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [23725fbc] Command: ~/.rvm/bin/rvm version
+ DEBUG [23725fbc] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [23725fbc] 	
+ DEBUG [23725fbc] Finished in 1.597 seconds with exit status 0 (successful).
+ DEBUG [777ab353] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [777ab353] Command: ~/.rvm/bin/rvm current
+ DEBUG [777ab353] 	ruby-2.3.0
+ DEBUG [777ab353] 	
+ DEBUG [777ab353] Finished in 0.283 seconds with exit status 0 (successful).
+ DEBUG [ef891ed5] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ef891ed5] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [ef891ed5] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [ef891ed5] 	
+ DEBUG [ef891ed5] Finished in 0.545 seconds with exit status 0 (successful).
+  INFO [b698b365] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b698b365] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b698b365] Finished in 0.174 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [53222b63] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [53222b63] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [53222b63] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [17108629] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [17108629] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [17108629] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [17108629] 		
+ DEBUG [17108629] 	refs/heads/master
+ DEBUG [17108629] 	
+  INFO [17108629] Finished in 1.260 seconds with exit status 0 (successful).
+  INFO [ee9af6ea] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ee9af6ea] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [ee9af6ea] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [8147aaf2] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8147aaf2] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [8147aaf2] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [f7a60a66] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f7a60a66] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [f7a60a66] Finished in 0.170 seconds with exit status 0 (successful).
+ DEBUG [75f8b343] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [75f8b343] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [75f8b343] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [b37abd87] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b37abd87] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [b37abd87] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [b37abd87] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [c39ec27f] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c39ec27f] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [c39ec27f] Finished in 0.195 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [4596a633] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [4596a633] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [4596a633] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [98611448] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [98611448] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [98611448] 	Fetching origin
+ DEBUG [98611448] 	
+  INFO [98611448] Finished in 1.342 seconds with exit status 0 (successful).
+ DEBUG [7ead394e] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [7ead394e] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [7ead394e] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [e95c327b] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163137 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e95c327b] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163137 )
+  INFO [e95c327b] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [a01b0750] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163137 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a01b0750] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163137 )
+  INFO [a01b0750] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [22883d66] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [22883d66] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [22883d66] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [80598e0a] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [80598e0a] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [80598e0a] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [80598e0a] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG [55b9576d] Running if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [55b9576d] Command: if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi
+ DEBUG [55b9576d] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [256d2f55] Running /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [256d2f55] Command: cd /home/deploy/connectSV/releases/20161007163137 && /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION
+  INFO [256d2f55] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [6d593d43] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163137/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [6d593d43] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163137/public
+  INFO [6d593d43] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [023adaa6] Running [ -L /home/deploy/connectSV/releases/20161007163137/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [023adaa6] Command: [ -L /home/deploy/connectSV/releases/20161007163137/public/assets ]
+ DEBUG [023adaa6] Finished in 0.158 seconds with exit status 1 (failed).
+ DEBUG [46cc6822] Running [ -d /home/deploy/connectSV/releases/20161007163137/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [46cc6822] Command: [ -d /home/deploy/connectSV/releases/20161007163137/public/assets ]
+ DEBUG [46cc6822] Finished in 0.154 seconds with exit status 1 (failed).
+  INFO [d5a1b11e] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163137/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d5a1b11e] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163137/public/assets
+  INFO [d5a1b11e] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [f990512e] Running if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f990512e] Command: if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi
+ DEBUG [f990512e] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [34407364] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [34407364] Command: cd /home/deploy/connectSV/releases/20161007163137 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [34407364] Finished in 1.494 seconds with exit status 0 (successful).
+ DEBUG [7929f8a1] Running if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [7929f8a1] Command: if test ! -d /home/deploy/connectSV/releases/20161007163137; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163137'" 1>&2; false; fi
+ DEBUG [7929f8a1] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [c9a59e3c] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c9a59e3c] Command: cd /home/deploy/connectSV/releases/20161007163137 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 11:34:04 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d45ef1bb] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d45ef1bb] Command: [ -d ~/.rvm ]
+ DEBUG [d45ef1bb] Finished in 1.897 seconds with exit status 0 (successful).
+ DEBUG [c6734a75] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c6734a75] Command: ~/.rvm/bin/rvm version
+ DEBUG [c6734a75] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [c6734a75] 	
+ DEBUG [c6734a75] Finished in 1.460 seconds with exit status 0 (successful).
+ DEBUG [48c4cc99] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [48c4cc99] Command: ~/.rvm/bin/rvm current
+ DEBUG [48c4cc99] 	ruby-2.3.0
+ DEBUG [48c4cc99] 	
+ DEBUG [48c4cc99] Finished in 0.284 seconds with exit status 0 (successful).
+ DEBUG [f72565e6] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f72565e6] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [f72565e6] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [f72565e6] 	
+ DEBUG [f72565e6] Finished in 0.447 seconds with exit status 0 (successful).
+  INFO [decc2e6c] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [decc2e6c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [decc2e6c] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [141b86a3] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [141b86a3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [141b86a3] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [6c1e23dc] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [6c1e23dc] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [6c1e23dc] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [6c1e23dc] 		
+ DEBUG [6c1e23dc] 	refs/heads/master
+ DEBUG [6c1e23dc] 	
+  INFO [6c1e23dc] Finished in 0.895 seconds with exit status 0 (successful).
+  INFO [0a269aee] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [0a269aee] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [0a269aee] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [a5c5f7d6] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a5c5f7d6] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [a5c5f7d6] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [3ffb8cf6] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3ffb8cf6] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [3ffb8cf6] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [98697e96] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [98697e96] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [98697e96] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [b51487a3] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b51487a3] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [b51487a3] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [b51487a3] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [5c221f3c] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5c221f3c] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [5c221f3c] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [0e9c3161] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [0e9c3161] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [0e9c3161] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [341afd14] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [341afd14] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [341afd14] 	Fetching origin
+ DEBUG [341afd14] 	
+  INFO [341afd14] Finished in 0.872 seconds with exit status 0 (successful).
+ DEBUG [9946df11] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [9946df11] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [9946df11] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [4f839d54] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163411 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [4f839d54] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163411 )
+  INFO [4f839d54] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [3c6cf5c8] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163411 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3c6cf5c8] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163411 )
+  INFO [3c6cf5c8] Finished in 0.189 seconds with exit status 0 (successful).
+ DEBUG [ec7f46a4] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ec7f46a4] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [ec7f46a4] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [101e8e91] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [101e8e91] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [101e8e91] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [101e8e91] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [793235ae] Running if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [793235ae] Command: if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi
+ DEBUG [793235ae] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [1b10f7d8] Running /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [1b10f7d8] Command: cd /home/deploy/connectSV/releases/20161007163411 && /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION
+  INFO [1b10f7d8] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [18ba6645] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163411/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [18ba6645] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163411/public
+  INFO [18ba6645] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [06b5f5b0] Running [ -L /home/deploy/connectSV/releases/20161007163411/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [06b5f5b0] Command: [ -L /home/deploy/connectSV/releases/20161007163411/public/assets ]
+ DEBUG [06b5f5b0] Finished in 0.157 seconds with exit status 1 (failed).
+ DEBUG [d6a16caf] Running [ -d /home/deploy/connectSV/releases/20161007163411/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d6a16caf] Command: [ -d /home/deploy/connectSV/releases/20161007163411/public/assets ]
+ DEBUG [d6a16caf] Finished in 0.154 seconds with exit status 1 (failed).
+  INFO [f53b3c7d] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163411/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f53b3c7d] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163411/public/assets
+  INFO [f53b3c7d] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [b27b7085] Running if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b27b7085] Command: if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi
+ DEBUG [b27b7085] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [0c55d865] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [0c55d865] Command: cd /home/deploy/connectSV/releases/20161007163411 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [0c55d865] Finished in 1.623 seconds with exit status 0 (successful).
+ DEBUG [2ab259ad] Running if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2ab259ad] Command: if test ! -d /home/deploy/connectSV/releases/20161007163411; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163411'" 1>&2; false; fi
+ DEBUG [2ab259ad] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [b0d82bef] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b0d82bef] Command: cd /home/deploy/connectSV/releases/20161007163411 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [b0d82bef] 	rake aborted!
+ExecJS::RuntimeError: FATAL ERROR: Committing semi space failed. Allocation failed - process out of memory
+(execjs):1
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:219:in `exec_runtime'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:46:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:179:in `run_uglifyjs'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:141:in `compile'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:52:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:28:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:75:in `call_processor'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `reverse_each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:134:in `load_from_unloaded'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:60:in `block in load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:44:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:20:in `block in initialize'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:47:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:66:in `find_asset'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:73:in `find_all_linked_assets'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:142:in `block in find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:114:in `block (2 levels) in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:228:in `block in stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:212:in `block in stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:227:in `stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `block in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:140:in `find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:185:in `compile'
+/home/deploy/connectSV/shared/
+ DEBUG [b0d82bef] 	bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:68:in `block (3 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/rake/sprocketstask.rb:147:in `with_logger'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:67:in `block (2 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => assets:precompile
+(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 11:35:35 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e5110ffa] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e5110ffa] Command: [ -d ~/.rvm ]
+ DEBUG [e5110ffa] Finished in 1.670 seconds with exit status 0 (successful).
+ DEBUG [29095aeb] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [29095aeb] Command: ~/.rvm/bin/rvm version
+ DEBUG [29095aeb] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [29095aeb] 	
+ DEBUG [29095aeb] Finished in 1.379 seconds with exit status 0 (successful).
+ DEBUG [cf35c22e] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [cf35c22e] Command: ~/.rvm/bin/rvm current
+ DEBUG [cf35c22e] 	ruby-2.3.0
+ DEBUG [cf35c22e] 	
+ DEBUG [cf35c22e] Finished in 0.288 seconds with exit status 0 (successful).
+ DEBUG [deb017ac] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [deb017ac] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [deb017ac] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [deb017ac] 	
+ DEBUG [deb017ac] Finished in 0.443 seconds with exit status 0 (successful).
+  INFO [eda54e2a] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [eda54e2a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [eda54e2a] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [a1d6cdbd] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a1d6cdbd] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [a1d6cdbd] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [52e4939d] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [52e4939d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [52e4939d] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [52e4939d] 		
+ DEBUG [52e4939d] 	refs/heads/master
+ DEBUG [52e4939d] 	
+  INFO [52e4939d] Finished in 0.914 seconds with exit status 0 (successful).
+  INFO [2f1014da] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2f1014da] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [2f1014da] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [ad36212a] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ad36212a] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [ad36212a] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [756e317c] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [756e317c] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [756e317c] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [5933d9fa] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5933d9fa] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [5933d9fa] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [08d3cd37] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [08d3cd37] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [08d3cd37] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [08d3cd37] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [2dabfbd9] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2dabfbd9] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [2dabfbd9] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [34d2a5c5] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [34d2a5c5] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [34d2a5c5] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [987a906f] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [987a906f] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [987a906f] 	Fetching origin
+ DEBUG [987a906f] 	
+  INFO [987a906f] Finished in 0.802 seconds with exit status 0 (successful).
+ DEBUG [583981ea] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [583981ea] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [583981ea] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [bb1f4e68] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163541 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [bb1f4e68] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163541 )
+  INFO [bb1f4e68] Finished in 0.187 seconds with exit status 0 (successful).
+  INFO [c1b3ecec] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163541 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c1b3ecec] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163541 )
+  INFO [c1b3ecec] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG [3dd591a0] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3dd591a0] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [3dd591a0] Finished in 0.185 seconds with exit status 0 (successful).
+ DEBUG [539726d9] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [539726d9] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [539726d9] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [539726d9] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [283f5285] Running if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [283f5285] Command: if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi
+ DEBUG [283f5285] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO [2f036375] Running /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2f036375] Command: cd /home/deploy/connectSV/releases/20161007163541 && /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION
+  INFO [2f036375] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [8b056791] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163541/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8b056791] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163541/public
+  INFO [8b056791] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [698ec08a] Running [ -L /home/deploy/connectSV/releases/20161007163541/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [698ec08a] Command: [ -L /home/deploy/connectSV/releases/20161007163541/public/assets ]
+ DEBUG [698ec08a] Finished in 0.151 seconds with exit status 1 (failed).
+ DEBUG [7444cf2d] Running [ -d /home/deploy/connectSV/releases/20161007163541/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [7444cf2d] Command: [ -d /home/deploy/connectSV/releases/20161007163541/public/assets ]
+ DEBUG [7444cf2d] Finished in 0.150 seconds with exit status 1 (failed).
+  INFO [ec9bf6f1] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163541/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ec9bf6f1] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163541/public/assets
+  INFO [ec9bf6f1] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [473bed16] Running if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [473bed16] Command: if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi
+ DEBUG [473bed16] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [ebb30dac] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ebb30dac] Command: cd /home/deploy/connectSV/releases/20161007163541 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [ebb30dac] Finished in 1.476 seconds with exit status 0 (successful).
+ DEBUG [c8495499] Running if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c8495499] Command: if test ! -d /home/deploy/connectSV/releases/20161007163541; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163541'" 1>&2; false; fi
+ DEBUG [c8495499] Finished in 0.150 seconds with exit status 0 (successful).
+  INFO [78a71e3a] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [78a71e3a] Command: cd /home/deploy/connectSV/releases/20161007163541 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [78a71e3a] 	rake aborted!
+ExecJS::RuntimeError: FATAL ERROR: Committing semi space failed. Allocation failed - process out of memory
+(execjs):1
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:219:in `exec_runtime'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:39:in `exec'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:21:in `eval'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/external_runtime.rb:46:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:179:in `run_uglifyjs'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.1/lib/uglifier.rb:141:in `compile'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:52:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/uglifier_compressor.rb:28:in `call'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:75:in `call_processor'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `reverse_each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/processor_utils.rb:56:in `call_processors'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:134:in `load_from_unloaded'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:60:in `block in load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:317:in `fetch_asset_from_dependency_cache'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/loader.rb:44:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:20:in `block in initialize'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/cached_environment.rb:47:in `load'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:66:in `find_asset'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/base.rb:73:in `find_all_linked_assets'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:142:in `block in find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:114:in `block (2 levels) in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:228:in `block in stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:212:in `block in stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:209:in `stat_directory'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/path_utils.rb:227:in `stat_tree'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:105:in `block in logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `each'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/legacy.rb:104:in `logical_paths'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:140:in `find'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/sprockets/manifest.rb:185:in `compile'
+/home/deploy/connectSV/shared/
+ DEBUG [78a71e3a] 	bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:68:in `block (3 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-3.7.0/lib/rake/sprocketstask.rb:147:in `with_logger'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/sprockets-rails-3.1.1/lib/sprockets/rails/task.rb:67:in `block (2 levels) in define'
+/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => assets:precompile
+(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 11:39:42 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2757956b] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2757956b] Command: [ -d ~/.rvm ]
+ DEBUG [2757956b] Finished in 1.773 seconds with exit status 0 (successful).
+ DEBUG [a72b8a3f] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a72b8a3f] Command: ~/.rvm/bin/rvm version
+ DEBUG [a72b8a3f] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [a72b8a3f] 	
+ DEBUG [a72b8a3f] Finished in 1.374 seconds with exit status 0 (successful).
+ DEBUG [899d6e88] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [899d6e88] Command: ~/.rvm/bin/rvm current
+ DEBUG [899d6e88] 	ruby-2.3.0
+ DEBUG [899d6e88] 	
+ DEBUG [899d6e88] Finished in 0.298 seconds with exit status 0 (successful).
+ DEBUG [313cc809] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [313cc809] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [313cc809] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [313cc809] 	
+ DEBUG [313cc809] Finished in 0.439 seconds with exit status 0 (successful).
+  INFO [d3fb99b2] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d3fb99b2] Command: /usr/bin/env mkdir -p /tmp
+  INFO [d3fb99b2] Finished in 0.171 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [65a0764e] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [65a0764e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [65a0764e] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [e841282e] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e841282e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [e841282e] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [e841282e] 		
+ DEBUG [e841282e] 	refs/heads/master
+ DEBUG [e841282e] 	
+  INFO [e841282e] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO [2c958db4] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [2c958db4] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [2c958db4] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [aa7d2ca9] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [aa7d2ca9] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [aa7d2ca9] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [067dec91] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [067dec91] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [067dec91] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [993bb08f] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [993bb08f] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [993bb08f] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [3937fc15] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3937fc15] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [3937fc15] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [3937fc15] 	
+ DEBUG [3937fc15] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [d3dd74c8] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d3dd74c8] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [d3dd74c8] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [ce840c40] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ce840c40] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [ce840c40] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [45cfb9c9] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [45cfb9c9] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [45cfb9c9] 	Fetching origin
+ DEBUG [45cfb9c9] 	
+  INFO [45cfb9c9] Finished in 0.754 seconds with exit status 0 (successful).
+ DEBUG [54c8258a] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [54c8258a] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [54c8258a] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [59763b87] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163948 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [59763b87] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163948 )
+  INFO [59763b87] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [3a7cc867] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163948 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3a7cc867] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161007163948 )
+  INFO [3a7cc867] Finished in 0.200 seconds with exit status 0 (successful).
+ DEBUG [88936895] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [88936895] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [88936895] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [86831fcd] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [86831fcd] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [86831fcd] 	4eeb0b184b1be4ae245894c8674c366c540f6208
+ DEBUG [86831fcd] 	
+ DEBUG [86831fcd] Finished in 0.164 seconds with exit status 0 (successful).
+ DEBUG [d72a388c] Running if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d72a388c] Command: if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi
+ DEBUG [d72a388c] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [db89a939] Running /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [db89a939] Command: cd /home/deploy/connectSV/releases/20161007163948 && /usr/bin/env echo "4eeb0b184b1be4ae245894c8674c366c540f6208" >> REVISION
+  INFO [db89a939] Finished in 0.165 seconds with exit status 0 (successful).
+  INFO [7a3d6f89] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163948/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [7a3d6f89] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161007163948/public
+  INFO [7a3d6f89] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [28aff0a4] Running [ -L /home/deploy/connectSV/releases/20161007163948/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [28aff0a4] Command: [ -L /home/deploy/connectSV/releases/20161007163948/public/assets ]
+ DEBUG [28aff0a4] Finished in 0.160 seconds with exit status 1 (failed).
+ DEBUG [8efb3f69] Running [ -d /home/deploy/connectSV/releases/20161007163948/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8efb3f69] Command: [ -d /home/deploy/connectSV/releases/20161007163948/public/assets ]
+ DEBUG [8efb3f69] Finished in 0.164 seconds with exit status 1 (failed).
+  INFO [3621db2f] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163948/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [3621db2f] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161007163948/public/assets
+  INFO [3621db2f] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [fb7b00da] Running if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [fb7b00da] Command: if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi
+ DEBUG [fb7b00da] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [e3c8b0d1] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e3c8b0d1] Command: cd /home/deploy/connectSV/releases/20161007163948 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [e3c8b0d1] Finished in 1.651 seconds with exit status 0 (successful).
+ DEBUG [d82bf709] Running if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d82bf709] Command: if test ! -d /home/deploy/connectSV/releases/20161007163948; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161007163948'" 1>&2; false; fi
+ DEBUG [d82bf709] Finished in 0.164 seconds with exit status 0 (successful).
+  INFO [4038daef] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [4038daef] Command: cd /home/deploy/connectSV/releases/20161007163948 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )

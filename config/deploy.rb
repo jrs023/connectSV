@@ -1,4 +1,7 @@
 # config valid only for current version of Capistrano
+require "bundler/capistrano"
+require "rvm/capistran0"
+before "deploy:assets:precompile", "bundle:install"
 lock '3.6.0'
 
 # Change these
