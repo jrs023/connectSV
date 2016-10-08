@@ -15,7 +15,7 @@ connection: &connection
   adapter: postgresql
   encoding: unicode
   pool: 5
-  username: connectSV
+  username: deploy
   password: Smoothjazz123
 
 development:
