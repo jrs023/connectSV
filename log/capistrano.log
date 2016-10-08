@@ -13074,3 +13074,714 @@ Make sure that `gem install pg -v '0.19.0'` succeeds before bundling.[0m
  DEBUG [57fbd71d] 	
  DEBUG [57fbd71d] 	(See full trace by running task with --trace)
  DEBUG [57fbd71d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 21:54:28 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ef5b3c04] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ef5b3c04] Command: [ -d ~/.rvm ]
+ DEBUG [ef5b3c04] Finished in 1.785 seconds with exit status 0 (successful).
+ DEBUG [b733c845] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b733c845] Command: ~/.rvm/bin/rvm version
+ DEBUG [b733c845] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [b733c845] 	
+ DEBUG [b733c845] Finished in 1.533 seconds with exit status 0 (successful).
+ DEBUG [4a4d48fc] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [4a4d48fc] Command: ~/.rvm/bin/rvm current
+ DEBUG [4a4d48fc] 	ruby-2.3.0
+ DEBUG [4a4d48fc] 	
+ DEBUG [4a4d48fc] Finished in 0.313 seconds with exit status 0 (successful).
+ DEBUG [1cba5401] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [1cba5401] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [1cba5401] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [1cba5401] 	
+ DEBUG [1cba5401] Finished in 0.507 seconds with exit status 0 (successful).
+  INFO [cfb76c5f] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [cfb76c5f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [cfb76c5f] Finished in 0.182 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [c34bb852] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c34bb852] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [c34bb852] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [e99d4460] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e99d4460] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [e99d4460] 	1cbf36fcde594967b22459c0dbb653e37aef0177
+ DEBUG [e99d4460] 		
+ DEBUG [e99d4460] 	refs/heads/master
+ DEBUG [e99d4460] 	
+  INFO [e99d4460] Finished in 0.861 seconds with exit status 0 (successful).
+  INFO [1d38c192] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [1d38c192] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [1d38c192] Finished in 0.206 seconds with exit status 0 (successful).
+  INFO [48ab241a] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [48ab241a] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [48ab241a] Finished in 0.189 seconds with exit status 0 (successful).
+ DEBUG [a4e78c3a] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a4e78c3a] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [a4e78c3a] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [5a8b2823] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5a8b2823] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [5a8b2823] Finished in 0.194 seconds with exit status 0 (successful).
+ DEBUG [8f738953] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8f738953] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [8f738953] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [8f738953] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [473f648c] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [473f648c] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [473f648c] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [6639978a] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [6639978a] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [6639978a] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [4ef54a5f] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [4ef54a5f] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4ef54a5f] 	Fetching origin
+ DEBUG [4ef54a5f] 	remote: Counting objects: 8, done.[K
+ DEBUG [4ef54a5f] 	
+ DEBUG [4ef54a5f] 	remote: Compressing objects:  33% (1/3)   [K
+ DEBUG [4ef54a5f] 	remote: Compressing objects:  66% (2/3)   [K
+ DEBUG [4ef54a5f] 	remote: Compressing objects: 100% (3/3)   [K
+ DEBUG [4ef54a5f] 	remote: Compressing objects: 100% (3/3), done.[K
+ DEBUG [4ef54a5f] 	
+ DEBUG [4ef54a5f] 	Unpacking objects:  12% (1/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects:  25% (2/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects:  37% (3/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects:  50% (4/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects:  62% (5/8)   
+ DEBUG [4ef54a5f] 	remote: Total 8 (delta 5), reused 8 (delta 5), pack-reused 0[K
+ DEBUG [4ef54a5f] 	
+ DEBUG [4ef54a5f] 	Unpacking objects:  75% (6/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects:  87% (7/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects: 100% (8/8)   
+ DEBUG [4ef54a5f] 	Unpacking objects: 100% (8/8), done.
+ DEBUG [4ef54a5f] 	
+ DEBUG [4ef54a5f] 	From https://github.com/jrs023/connectSV
+ DEBUG [4ef54a5f] 	
+ DEBUG [4ef54a5f] 	   e900d9d..1cbf36f  master     -> master
+ DEBUG [4ef54a5f] 	
+  INFO [4ef54a5f] Finished in 1.492 seconds with exit status 0 (successful).
+ DEBUG [b4d640a2] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b4d640a2] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [b4d640a2] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [fa4ac813] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [fa4ac813] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435 )
+  INFO [fa4ac813] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [892b6931] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025435 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [892b6931] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025435 )
+  INFO [892b6931] Finished in 0.209 seconds with exit status 0 (successful).
+ DEBUG [67b08106] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [67b08106] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [67b08106] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [d79e6242] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d79e6242] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d79e6242] 	1cbf36fcde594967b22459c0dbb653e37aef0177
+ DEBUG [d79e6242] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [02b75a49] Running if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [02b75a49] Command: if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi
+ DEBUG [02b75a49] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [1de5d52c] Running /usr/bin/env echo "1cbf36fcde594967b22459c0dbb653e37aef0177" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [1de5d52c] Command: cd /home/deploy/connectSV/releases/20161008025435 && /usr/bin/env echo "1cbf36fcde594967b22459c0dbb653e37aef0177" >> REVISION
+  INFO [1de5d52c] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [25444f69] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [25444f69] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435/public
+  INFO [25444f69] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [33b79795] Running [ -L /home/deploy/connectSV/releases/20161008025435/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [33b79795] Command: [ -L /home/deploy/connectSV/releases/20161008025435/public/assets ]
+ DEBUG [33b79795] Finished in 0.178 seconds with exit status 1 (failed).
+ DEBUG [b169987b] Running [ -d /home/deploy/connectSV/releases/20161008025435/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b169987b] Command: [ -d /home/deploy/connectSV/releases/20161008025435/public/assets ]
+ DEBUG [b169987b] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [038f5c09] Running /usr/bin/env rm -rf /home/deploy/connectSV/releases/20161008025435/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [038f5c09] Command: /usr/bin/env rm -rf /home/deploy/connectSV/releases/20161008025435/public/assets
+  INFO [038f5c09] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [f5b19101] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025435/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f5b19101] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025435/public/assets
+  INFO [f5b19101] Finished in 0.225 seconds with exit status 0 (successful).
+ DEBUG [11b38acf] Running if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [11b38acf] Command: if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi
+ DEBUG [11b38acf] Finished in 0.258 seconds with exit status 0 (successful).
+ DEBUG [d7c25764] Running ~/.rvm/bin/rvm default do bundle check --path /home/deploy/connectSV/shared/bundle on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d7c25764] Command: cd /home/deploy/connectSV/releases/20161008025435 && ~/.rvm/bin/rvm default do bundle check --path /home/deploy/connectSV/shared/bundle
+ DEBUG [d7c25764] 	[31mThe following gems are missing[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * net-ssh (3.2.0)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * net-scp (1.2.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * sshkit (1.11.3)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * airbrussh (1.1.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * byebug (9.0.6)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano-harrow (0.5.3)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano (3.6.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano-bundler (1.2.0)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano-rails (1.1.8)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * capistrano3-puma (1.2.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * debug_inspector (0.0.2)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * ffi (1.9.14)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * rb-fsevent (0.9.7)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * rb-inotify (0.9.7)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * listen (3.0.8)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * spring (2.0.0)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * spring-watcher-listen (2.0.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[31m * web-console (3.3.1)[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [d7c25764] 	
+ DEBUG [d7c25764] Finished in 0.775 seconds with exit status 1 (failed).
+  INFO [69399e93] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [69399e93] Command: cd /home/deploy/connectSV/releases/20161008025435 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [69399e93] Finished in 1.233 seconds with exit status 0 (successful).
+ DEBUG [ee84b42f] Running if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ee84b42f] Command: if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi
+ DEBUG [ee84b42f] Finished in 0.187 seconds with exit status 0 (successful).
+  INFO [a127c60d] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a127c60d] Command: cd /home/deploy/connectSV/releases/20161008025435 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+  INFO [a127c60d] Finished in 3.701 seconds with exit status 0 (successful).
+ DEBUG [030361bc] Running if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [030361bc] Command: if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi
+ DEBUG [030361bc] Finished in 0.185 seconds with exit status 0 (successful).
+  INFO [a8e8ca27] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435/assets_manifest_backup on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a8e8ca27] Command: cd /home/deploy/connectSV/releases/20161008025435 && /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025435/assets_manifest_backup
+  INFO [a8e8ca27] Finished in 0.186 seconds with exit status 0 (successful).
+ DEBUG [64d6814e] Running /usr/bin/env ls /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest* on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [64d6814e] Command: cd /home/deploy/connectSV/releases/20161008025435 && /usr/bin/env ls /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest*
+ DEBUG [64d6814e] 	/home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json
+ DEBUG [64d6814e] Finished in 0.189 seconds with exit status 0 (successful).
+ DEBUG [ae93abe4] Running /usr/bin/env ls /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest* on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ae93abe4] Command: cd /home/deploy/connectSV/releases/20161008025435 && /usr/bin/env ls /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest*
+ DEBUG [ae93abe4] 	/home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json
+ DEBUG [ae93abe4] Finished in 0.493 seconds with exit status 0 (successful).
+  INFO [51cb9f99] Running /usr/bin/env cp /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025435/assets_manifest_backup on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [51cb9f99] Command: cd /home/deploy/connectSV/releases/20161008025435 && /usr/bin/env cp /home/deploy/connectSV/releases/20161008025435/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025435/assets_manifest_backup
+  INFO [51cb9f99] Finished in 0.186 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [f8b611f4] Running if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f8b611f4] Command: if test ! -d /home/deploy/connectSV/releases/20161008025435; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025435'" 1>&2; false; fi
+ DEBUG [f8b611f4] Finished in 0.183 seconds with exit status 0 (successful).
+  INFO [c4b421e3] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c4b421e3] Command: cd /home/deploy/connectSV/releases/20161008025435 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [c4b421e3] 	rake aborted!
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	ActiveRecord::NoDatabaseError: FATAL:  role "deploy" does not exist
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connecti
+ DEBUG [c4b421e3] 	on_handling.rb:128:in `retrieve_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1099:in `initialize'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `new'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `up'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:983:in `migrate'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/tasks/database_tasks.rb:161:in `migrate'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.3.0/exe/rake:27:in `<top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top 
+ DEBUG [c4b421e3] 	(required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	PG::ConnectionBad: FATAL:  role "deploy" does not exist
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connecti
+ DEBUG [c4b421e3] 	on_pool.rb:875:in `retrieve_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1099:in `initialize'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `new'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `up'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:983:in `migrate'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/tasks/database_tasks.rb:161:in `migrate'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.3.0/exe/rake:27:in `<top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0
+ DEBUG [c4b421e3] 	/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	Tasks: TOP => db:migrate
+ DEBUG [c4b421e3] 	
+ DEBUG [c4b421e3] 	(See full trace by running task with --trace)
+ DEBUG [c4b421e3] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-10-07 21:55:34 -0500 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b35fd13f] Running [ -d ~/.rvm ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b35fd13f] Command: [ -d ~/.rvm ]
+ DEBUG [b35fd13f] Finished in 1.438 seconds with exit status 0 (successful).
+ DEBUG [b0130138] Running ~/.rvm/bin/rvm version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b0130138] Command: ~/.rvm/bin/rvm version
+ DEBUG [b0130138] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [b0130138] 	
+ DEBUG [b0130138] Finished in 1.598 seconds with exit status 0 (successful).
+ DEBUG [ecc667ee] Running ~/.rvm/bin/rvm current on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [ecc667ee] Command: ~/.rvm/bin/rvm current
+ DEBUG [ecc667ee] 	ruby-2.3.0
+ DEBUG [ecc667ee] 	
+ DEBUG [ecc667ee] Finished in 0.315 seconds with exit status 0 (successful).
+ DEBUG [0ed7cde1] Running ~/.rvm/bin/rvm default do ruby --version on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [0ed7cde1] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [0ed7cde1] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [0ed7cde1] 	
+ DEBUG [0ed7cde1] Finished in 0.423 seconds with exit status 0 (successful).
+  INFO [b7ee3ef0] Running /usr/bin/env mkdir -p /tmp on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b7ee3ef0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b7ee3ef0] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 0.0%
+  INFO Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
+  INFO [cd2ee355] Running /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [cd2ee355] Command: /usr/bin/env chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
+  INFO [cd2ee355] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [31378d06] Running /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [31378d06] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git ls-remote --heads https://github.com/jrs023/connectSV )
+ DEBUG [31378d06] 	1cbf36fcde594967b22459c0dbb653e37aef0177
+ DEBUG [31378d06] 		
+ DEBUG [31378d06] 	refs/heads/master
+ DEBUG [31378d06] 	
+  INFO [31378d06] Finished in 0.836 seconds with exit status 0 (successful).
+  INFO [b3faec0b] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [b3faec0b] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
+  INFO [b3faec0b] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [afbd99b4] Running /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [afbd99b4] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/shared/public/assets
+  INFO [afbd99b4] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [e6e2a1ba] Running [ -f /home/deploy/connectSV/shared/puma.rb ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [e6e2a1ba] Command: [ -f /home/deploy/connectSV/shared/puma.rb ]
+ DEBUG [e6e2a1ba] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG [f54b327e] Running [ -f /home/deploy/connectSV/current/REVISION ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f54b327e] Command: [ -f /home/deploy/connectSV/current/REVISION ]
+ DEBUG [f54b327e] Finished in 0.179 seconds with exit status 0 (successful).
+ DEBUG [df661e5e] Running /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [df661e5e] Command: /usr/bin/env cat /home/deploy/connectSV/current/REVISION 2>/dev/null
+ DEBUG [df661e5e] 	42d8aaa57cc4c1875145e950f4e66c12c439593f
+ DEBUG [df661e5e] Finished in 0.180 seconds with exit status 0 (successful).
+ DEBUG [bdb7ee75] Running [ -f /home/deploy/connectSV/repo/HEAD ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [bdb7ee75] Command: [ -f /home/deploy/connectSV/repo/HEAD ]
+ DEBUG [bdb7ee75] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/connectSV/repo
+ DEBUG [c91b471a] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c91b471a] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [c91b471a] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [27fa24a8] Running /usr/bin/env git remote update --prune on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [27fa24a8] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [27fa24a8] 	Fetching origin
+  INFO [27fa24a8] Finished in 0.780 seconds with exit status 0 (successful).
+ DEBUG [796f40b3] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [796f40b3] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [796f40b3] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [f7caf481] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f7caf481] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540 )
+  INFO [f7caf481] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [5338fa0c] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025540 on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5338fa0c] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025540 )
+  INFO [5338fa0c] Finished in 0.205 seconds with exit status 0 (successful).
+ DEBUG [69caa7bc] Running if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [69caa7bc] Command: if test ! -d /home/deploy/connectSV/repo; then echo "Directory does not exist '/home/deploy/connectSV/repo'" 1>&2; false; fi
+ DEBUG [69caa7bc] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [d8c81335] Running /usr/bin/env git rev-list --max-count=1 master on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [d8c81335] Command: cd /home/deploy/connectSV/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-connectSV-production-jrs023.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d8c81335] 	1cbf36fcde594967b22459c0dbb653e37aef0177
+ DEBUG [d8c81335] Finished in 0.184 seconds with exit status 0 (successful).
+ DEBUG [eff047d4] Running if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [eff047d4] Command: if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi
+ DEBUG [eff047d4] Finished in 0.181 seconds with exit status 0 (successful).
+  INFO [5cc7b860] Running /usr/bin/env echo "1cbf36fcde594967b22459c0dbb653e37aef0177" >> REVISION on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5cc7b860] Command: cd /home/deploy/connectSV/releases/20161008025540 && /usr/bin/env echo "1cbf36fcde594967b22459c0dbb653e37aef0177" >> REVISION
+  INFO [5cc7b860] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [cd12ed87] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540/public on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [cd12ed87] Command: /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540/public
+  INFO [cd12ed87] Finished in 0.181 seconds with exit status 0 (successful).
+ DEBUG [28639c41] Running [ -L /home/deploy/connectSV/releases/20161008025540/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [28639c41] Command: [ -L /home/deploy/connectSV/releases/20161008025540/public/assets ]
+ DEBUG [28639c41] Finished in 0.179 seconds with exit status 1 (failed).
+ DEBUG [c63f91ee] Running [ -d /home/deploy/connectSV/releases/20161008025540/public/assets ] on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c63f91ee] Command: [ -d /home/deploy/connectSV/releases/20161008025540/public/assets ]
+ DEBUG [c63f91ee] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [8e6abbec] Running /usr/bin/env rm -rf /home/deploy/connectSV/releases/20161008025540/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8e6abbec] Command: /usr/bin/env rm -rf /home/deploy/connectSV/releases/20161008025540/public/assets
+  INFO [8e6abbec] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [710499e9] Running /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025540/public/assets on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [710499e9] Command: /usr/bin/env ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025540/public/assets
+  INFO [710499e9] Finished in 0.180 seconds with exit status 0 (successful).
+ DEBUG [343c0383] Running if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [343c0383] Command: if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi
+ DEBUG [343c0383] Finished in 0.185 seconds with exit status 0 (successful).
+ DEBUG [a65852ea] Running ~/.rvm/bin/rvm default do bundle check --path /home/deploy/connectSV/shared/bundle on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [a65852ea] Command: cd /home/deploy/connectSV/releases/20161008025540 && ~/.rvm/bin/rvm default do bundle check --path /home/deploy/connectSV/shared/bundle
+ DEBUG [a65852ea] 	[31mThe following gems are missing[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * net-ssh (3.2.0)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * net-scp (1.2.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * sshkit (1.11.3)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * airbrussh (1.1.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * byebug (9.0.6)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano-harrow (0.5.3)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano (3.6.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano-bundler (1.2.0)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano-rails (1.1.8)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano-rvm (0.1.2)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * capistrano3-puma (1.2.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * debug_inspector (0.0.2)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * ffi (1.9.14)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * rb-fsevent (0.9.7)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * rb-inotify (0.9.7)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * listen (3.0.8)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * spring (2.0.0)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * spring-watcher-listen (2.0.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[31m * web-console (3.3.1)[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] 	[33mInstall missing gems with `bundle install`[0m
+ DEBUG [a65852ea] 	
+ DEBUG [a65852ea] Finished in 0.782 seconds with exit status 1 (failed).
+  INFO [8d9dfc6c] Running ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [8d9dfc6c] Command: cd /home/deploy/connectSV/releases/20161008025540 && ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
+  INFO [8d9dfc6c] Finished in 1.238 seconds with exit status 0 (successful).
+ DEBUG [09a57268] Running if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [09a57268] Command: if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi
+ DEBUG [09a57268] Finished in 0.179 seconds with exit status 0 (successful).
+  INFO [dad9d83d] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [dad9d83d] Command: cd /home/deploy/connectSV/releases/20161008025540 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+  INFO [dad9d83d] Finished in 3.711 seconds with exit status 0 (successful).
+ DEBUG [f0b53512] Running if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [f0b53512] Command: if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi
+ DEBUG [f0b53512] Finished in 0.180 seconds with exit status 0 (successful).
+  INFO [c0de18cb] Running /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [c0de18cb] Command: cd /home/deploy/connectSV/releases/20161008025540 && /usr/bin/env mkdir -p /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup
+  INFO [c0de18cb] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [5f29ab0a] Running /usr/bin/env ls /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest* on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [5f29ab0a] Command: cd /home/deploy/connectSV/releases/20161008025540 && /usr/bin/env ls /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest*
+ DEBUG [5f29ab0a] 	/home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json
+ DEBUG [5f29ab0a] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [62844c84] Running /usr/bin/env ls /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest* on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [62844c84] Command: cd /home/deploy/connectSV/releases/20161008025540 && /usr/bin/env ls /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest*
+ DEBUG [62844c84] 	/home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json
+ DEBUG [62844c84] Finished in 0.184 seconds with exit status 0 (successful).
+  INFO [066a1294] Running /usr/bin/env cp /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [066a1294] Command: cd /home/deploy/connectSV/releases/20161008025540 && /usr/bin/env cp /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup
+  INFO [066a1294] Finished in 0.182 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [277e8e62] Running if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [277e8e62] Command: if test ! -d /home/deploy/connectSV/releases/20161008025540; then echo "Directory does not exist '/home/deploy/connectSV/releases/20161008025540'" 1>&2; false; fi
+ DEBUG [277e8e62] Finished in 0.177 seconds with exit status 0 (successful).
+  INFO [1030a5f4] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate on ec2-52-42-210-119.us-west-2.compute.amazonaws.com
+ DEBUG [1030a5f4] Command: cd /home/deploy/connectSV/releases/20161008025540 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [1030a5f4] 	rake aborted!
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	ActiveRecord::NoDatabaseError: FATAL:  role "deploy" does not exist
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connecti
+ DEBUG [1030a5f4] 	on_handling.rb:128:in `retrieve_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1099:in `initialize'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `new'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `up'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:983:in `migrate'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/tasks/database_tasks.rb:161:in `migrate'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.3.0/exe/rake:27:in `<top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top 
+ DEBUG [1030a5f4] 	(required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	PG::ConnectionBad: FATAL:  role "deploy" does not exist
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connecti
+ DEBUG [1030a5f4] 	on_pool.rb:875:in `retrieve_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1099:in `initialize'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `new'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `up'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:983:in `migrate'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/tasks/database_tasks.rb:161:in `migrate'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.3.0/exe/rake:27:in `<top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0
+ DEBUG [1030a5f4] 	/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	/home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	Tasks: TOP => db:migrate
+ DEBUG [1030a5f4] 	
+ DEBUG [1030a5f4] 	(See full trace by running task with --trace)
+ DEBUG [1030a5f4] 	
