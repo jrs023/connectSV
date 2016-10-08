@@ -3,140 +3,83 @@ ruby-2.3.0
 ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
 00:00 git:wrapper
       01 mkdir -p /tmp
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.184s
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.190s
       Uploading /tmp/git-ssh-connectSV-production-jrs023.sh 100.0%
       02 chmod 700 /tmp/git-ssh-connectSV-production-jrs023.sh
-    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.179s
-00:00 git:check
+    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.185s
+00:01 git:check
       01 git ls-remote --heads https://github.com/jrs023/connectSV
-      01 1cbf36fcde594967b22459c0dbb653e37aef0177
+      01 64d161199649ae05a4fd669c5d73785c31189794
       01 	
       01 refs/heads/master
       01 
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.836s
-00:01 deploy:check:directories
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 1.319s
+00:02 deploy:check:directories
       01 mkdir -p /home/deploy/connectSV/shared /home/deploy/connectSV/releases
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.178s
-00:02 deploy:check:linked_dirs
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.204s
+00:03 deploy:check:linked_dirs
       01 mkdir -p /home/deploy/connectSV/shared/public/assets
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.178s
-00:02 git:clone
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.231s
+00:04 git:clone
       The repository mirror is at /home/deploy/connectSV/repo
-00:03 git:update
+00:04 git:update
       01 git remote update --prune
       01 Fetching origin
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.780s
-00:04 git:create_release
-      01 mkdir -p /home/deploy/connectSV/releases/20161008025540
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.179s
-      02 git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025540
-    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.205s
-00:04 git:set_current_revision
-      01 echo "1cbf36fcde594967b22459c0dbb653e37aef0177" >> REVISION
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.179s
-00:05 deploy:symlink:linked_dirs
-      01 mkdir -p /home/deploy/connectSV/releases/20161008025540/public
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.181s
-      02 rm -rf /home/deploy/connectSV/releases/20161008025540/public/assets
-    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.178s
-      03 ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025540/public/assets
-    ✔ 03 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.180s
-00:07 bundler:install
+      01 remote: Counting objects: 7, done.[K
+      01 
+      01 remote: Compressing objects:  50% (1/2)   [K
+      01 remote: Compressing objects: 100% (2/2)   [K
+      01 remote: Compressing objects: 100% (2/2), done.[K
+      01 
+      01 remote: Total 7 (delta 5), reused 7 (delta 5), pack-reused 0[K
+      01 
+      01 Unpacking objects:  14% (1/7)   
+      01 Unpacking objects:  28% (2/7)   
+      01 Unpacking objects:  42% (3/7)   
+      01 Unpacking objects:  57% (4/7)   
+      01 Unpacking objects:  71% (5/7)   
+      01 Unpacking objects:  85% (6/7)   
+      01 Unpacking objects: 100% (7/7)   
+      01 Unpacking objects: 100% (7/7), done.
+      01 
+      01 From https://github.com/jrs023/connectSV
+      01 
+      01    1cbf36f..64d1611  master     -> master
+      01 
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 1.376s
+00:05 git:create_release
+      01 mkdir -p /home/deploy/connectSV/releases/20161008025856
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.182s
+      02 git archive master | tar -x -f - -C /home/deploy/connectSV/releases/20161008025856
+    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.214s
+00:06 git:set_current_revision
+      01 echo "64d161199649ae05a4fd669c5d73785c31189794" >> REVISION
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.182s
+00:06 deploy:symlink:linked_dirs
+      01 mkdir -p /home/deploy/connectSV/releases/20161008025856/public
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.185s
+      02 rm -rf /home/deploy/connectSV/releases/20161008025856/public/assets
+    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.183s
+      03 ln -s /home/deploy/connectSV/shared/public/assets /home/deploy/connectSV/releases/20161008025856/public/assets
+    ✔ 03 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.183s
+00:08 bundler:install
       01 ~/.rvm/bin/rvm default do bundle install --path /home/deploy/connectSV/shared/bundle --without development test --deployment --quiet
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 1.238s
-00:08 deploy:assets:precompile
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 1.348s
+00:10 deploy:assets:precompile
       01 ~/.rvm/bin/rvm default do bundle exec rake assets:precompile
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 3.711s
-00:12 deploy:assets:backup_manifest
-      01 mkdir -p /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup
-    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.183s
-      02 cp /home/deploy/connectSV/releases/20161008025540/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025540/assets_manifest_backup
-    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.182s
-00:13 deploy:migrate
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 3.805s
+00:14 deploy:assets:backup_manifest
+      01 mkdir -p /home/deploy/connectSV/releases/20161008025856/assets_manifest_backup
+    ✔ 01 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.184s
+      02 cp /home/deploy/connectSV/releases/20161008025856/public/assets/.sprockets-manifest-85f088c1b016b50766f0bef22d480bac.json /home/deploy/connectSV/releases/20161008025856/assets_manifest_backup
+    ✔ 02 deploy@ec2-52-42-210-119.us-west-2.compute.amazonaws.com 0.187s
+00:15 deploy:migrate
       [deploy:migrate] Run `rake db:migrate`
-00:13 deploy:migrating
+00:15 deploy:migrating
       01 ~/.rvm/bin/rvm default do bundle exec rake db:migrate
       01 rake aborted!
       01 
-      01 ActiveRecord::NoDatabaseError: FATAL:  role "deploy" does not exist
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:721:in `new_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:765:in `checkout_new_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:744:in `try_to_checkout_new_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:705:in `acquire_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:501:in `checkout'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:875:in `retrieve_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connecti
-      01 on_handling.rb:128:in `retrieve_connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_handling.rb:91:in `connection'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1099:in `initialize'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `new'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:1005:in `up'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:983:in `migrate'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/tasks/database_tasks.rb:161:in `migrate'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/databases.rake:58:in `block (2 levels) in <top (required)>'
-      01 
-      01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/rake-11.3.0/exe/rake:27:in `<top (required)>'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:27:in `block in <top 
-      01 (required)>'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `load'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/bin/bundle:23:in `<main>'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
-      01 
-      01 /home/deploy/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
-      01 
-      01 PG::ConnectionBad: FATAL:  role "deploy" does not exist
+      01 PG::ConnectionBad: FATAL:  Peer authentication failed for user "connectSV"
       01 
       01 /home/deploy/connectSV/shared/bundle/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
       01 
